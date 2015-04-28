@@ -137,6 +137,7 @@ class Decks {
     public Decks(int n)
     {
         // implement this method!
+        numberDecks = n;
         originalDecks = new ArrayList<Card>();
         dealDecks = new ArrayList<Card>();
         Card aCard;
@@ -155,7 +156,7 @@ class Decks {
 
         int x = originalDecks.size();
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < numberDecks; i++) {
             for (int j = 0; j < x; j++) {
                 Card originalDeck = originalDecks.get(j);
                 dealDecks.add(originalDeck);
@@ -214,10 +215,11 @@ class Decks {
      */
     public void reset()
     {
-        // implement this method!
-
-        for (int i = 0, originalDecksSize = originalDecks.size(); i < originalDecksSize; i++) {
-            dealDecks.add(originalDecks.get(i));
+        dealDecks.clear();
+        for (int i = 0; i < numberDecks ; i++) {
+            for (int j = 0, originalDecksSize = originalDecks.size(); j <  originalDecksSize; j++) {
+            dealDecks.add(originalDecks.get(j));
+            }
         }
 
     }

@@ -2,6 +2,7 @@ package PJ5;
 
 import java.util.*;
 import java.util.Random;
+import static java.util.Collections.swap;
 
 /** class PlayingCardException: It is used for errors related to Card and Deck objects
  *  Do not modify this class!
@@ -120,12 +121,9 @@ class Decks {
             }
         }
 
-
         for (int i = 0; i <originalDecks.size(); i++) {
             dealDecks.add(originalDecks.get(i));
         }
-
-
     }
 
 
@@ -158,7 +156,8 @@ class Decks {
         int x = originalDecks.size();
 
         for (int i = 0; i < n; i++) {
-            for (Card originalDeck : originalDecks) {
+            for (int j = 0; j < x; j++) {
+                Card originalDeck = originalDecks.get(j);
                 dealDecks.add(originalDeck);
             }
         }
@@ -172,24 +171,22 @@ class Decks {
     public void shuffle()
     {
         // implement this method!
-        List <Card> deckHolder = new ArrayList<Card>();
         int staticSizeOfDeck = dealDecks.size();
         Random randomGenerator = new Random();
 
-
         for (int i = (staticSizeOfDeck - 1); i > 0 ; i--) {
             int randomNumber = randomGenerator.nextInt(i + 1);
-            Collections.swap(dealDecks, randomNumber, i);
+            swap(dealDecks, randomNumber, i);
         }
-
     }
+
 
     /**
      * Task: Deals cards from the deal deck.
      *
-     * @param numberCards number of cards to deal
-     * @return a list containing cards that were dealt
-     * @throw PlayingCardException if numberCard > number of remaining cards
+     * @ param numberCards number of cards to deal
+     * @ return a list containing cards that were dealt
+     * @ throw PlayingCardException if numberCard > number of remaining cards
      *
      * Note: You need to create ArrayList to stored dealt cards
      *       and should removed dealt cards from dealDecks
@@ -199,14 +196,17 @@ class Decks {
     {
         // implement this method!
         List <Card> hand = new ArrayList<Card>();
-        if (numberCards > dealDecks.size()){
-            numberCards = dealDecks.size();
-        }
 
-        for (int i = 0; i < numberCards; i++) {
-            hand.add(dealDecks.remove(0));
+        if (numberCards > dealDecks.size()){
+            throw new PlayingCardException("Not enough cards to deal\n");
         }
-        return hand;
+        else {
+
+            for (int i = 0; i < numberCards; i++) {
+                hand.add(dealDecks.remove(0));
+            }
+            return hand;
+        }
     }
 
     /**
@@ -215,6 +215,11 @@ class Decks {
     public void reset()
     {
         // implement this method!
+
+        for (int i = 0, originalDecksSize = originalDecks.size(); i < originalDecksSize; i++) {
+            dealDecks.add(originalDecks.get(i));
+        }
+
     }
 
     /**

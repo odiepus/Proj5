@@ -104,7 +104,16 @@ public class SimplePoker {
      *   add new private methods here ....
      *
      *************************************************/
+    private int showBalance(){
+        return balance;
+    }
 
+
+    private void getBet(){
+        Scanner in = new Scanner( System.in );
+        System.out.println("Enter bet: ");
+        bet = in.nextInt();
+    }
 
     public void play() 
     {
@@ -114,15 +123,22 @@ public class SimplePoker {
      * 		showPayoutTable()
      *
      * 		++	
-     * 		show balance, get bet 
-     *		verify bet value, update balance
-     *		reset deck, shuffle deck, 
-     *		deal cards and display cards
-     *		ask for position of cards to keep  
-     *          get positions in one input line
+     * 		show balance,
+     * 		get bet
+     *		verify bet value
+     *		update balance
+     *		reset deck
+     *		shuffle deck
+     *		deal cards
+     *		display cards
+     *
+     *		ask for position of cards to keep
+     *      get positions in one input line
      *		update cards
-     *		check hands, display proper messages
+     *		check hands
+     *		display proper messages
      *		update balance if there is a payout
+     *
      *		if balance = O:
      *			end of program 
      *		else
@@ -133,6 +149,17 @@ public class SimplePoker {
      */
 
         // implement this method!
+
+        showPayoutTable();
+
+        SimplePoker startGame = new SimplePoker();
+
+
+
+
+
+
+
     }
 
 

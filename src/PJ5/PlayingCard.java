@@ -222,7 +222,6 @@ class Decks {
      */
     public int remain()
     {
-        HECTOR r hERRERA
         return dealDecks.size();
     }
 

@@ -158,8 +158,8 @@ class Decks {
         int x = originalDecks.size();
 
         for (int i = 0; i < n; i++) {
-            for (int j = 0; j < x; j++) {
-                dealDecks.add(originalDecks.get(j));
+            for (Card originalDeck : originalDecks) {
+                dealDecks.add(originalDeck);
             }
         }
     }
@@ -222,6 +222,7 @@ class Decks {
      */
     public int remain()
     {
+        HECTOR r hERRERA
         return dealDecks.size();
     }
 

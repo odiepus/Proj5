@@ -158,8 +158,8 @@ class Decks {
 
         for (int i = 0; i < numberDecks; i++) {
             for (int j = 0; j < x; j++) {
-                Card originalDeck = originalDecks.get(j);
-                dealDecks.add(originalDeck);
+                Card originalDeckCard = originalDecks.get(j);
+                dealDecks.add(originalDeckCard);
             }
         }
     }
@@ -259,7 +259,7 @@ class Decks {
         {
             System.out.println("\n************************************************\n");
             System.out.println("Loop # " + j + "\n");
-            System.out.println("Before shuffle:"+decks.remain()+" cards");
+            System.out.println("Before shuffle:"+ decks.remain()+" cards");
             System.out.println("\n\t"+decks);
             System.out.println("\n==============================================\n");
 

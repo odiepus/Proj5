@@ -103,24 +103,41 @@ public class SimplePoker {
         checkForStrtOrFlush();
     }
 
+
+    /*************************************************
+     *   add new private methods here ....
+     *
+     *************************************************/
+
+
     private void checkForStrtOrFlush(){
-        if (checkForStraight(numberOfCards) == 0 && checkForFlush(4) == 0){
+        if ((checkForStraight(numberOfCards - 1) == 0) && (checkForFlush(4) == 0)){
             System.out.println("Straight Flush!");
         }
-        else if (checkForStraight(numberOfCards) == 0){
+        else if (checkForStraight(numberOfCards - 1) == 0){
             System.out.println("Straight!");
         }
-        else if (checkForFlush(4) == 0){
-            System.out.println("Flush!");
+        else {
+            if (checkForFlush(4) == 0) {
+                System.out.println("Flush!");
+            }
         }
     }
 
+
     private int checkForStraight(int index){
-        if (index ==0){
+        int cardA = 0, cardB = 0;
+
+        if (index != 0) {
+            cardA = currentHand.get(index - 1).getRank();
+            cardB = currentHand.get(index).getRank();
+        }
+
+        if (index == 0){
             return  index;
         }
-        else if (Math.abs(currentHand.get(index - 1).getRank()) - Math.abs(currentHand.get(index).getRank()) ==1){
-            return checkForStraight(index--);
+        else if (cardB - cardA ==1){
+            return checkForStraight(index-1);
         }
         else{
             return index;
@@ -128,11 +145,18 @@ public class SimplePoker {
     }
 
     private int checkForFlush(int index){
+        int cardA = 0, cardB = 0;
+
+        if (index != 0) {
+            cardA = currentHand.get(index - 1).getSuit();
+            cardB = currentHand.get(index).getSuit();
+        }
+
         if (index ==0){
             return  index;
         }
-        else if (Math.abs(currentHand.get(index - 1).getSuit()) - Math.abs(currentHand.get(index).getSuit()) == 0){
-            return checkForStraight(index--);
+        else if (cardB - cardA  == 0){
+            return checkForFlush(index - 1);
         }
         else{
             return index;
@@ -140,10 +164,7 @@ public class SimplePoker {
     }
 
 
-    /*************************************************
-     *   add new private methods here ....
-     *
-     *************************************************/
+
     private void showBalance(){
         System.out.println("Balance: " + balance + "\n");
     }

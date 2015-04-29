@@ -102,6 +102,7 @@ public class SimplePoker {
 
         if(checkForRoyalFlush()){}
         else if(checkForStrtOrFlush()){}
+        else if(checkForJohnStamos()){}
         else if(checkForAKind()){}
         else if(checkForPairs()){}
         else{
@@ -148,6 +149,7 @@ public class SimplePoker {
             System.out.println("Flush!");
             return true;
         }
+        kindCounter = 0;
         return false;
     }
 
@@ -190,6 +192,48 @@ public class SimplePoker {
         }
     }
 
+    private boolean checkForJohnStamos(){
+        if (findJohnStamosTop(numberOfCards - 1) == -1 && findJohnStamosBottom(numberOfCards - 1) == -1 && kindCounter == 5){
+            System.out.println("John Stamos!");
+            kindCounter = 0;
+            return true;
+        }
+        kindCounter = 0;
+        return false;
+
+
+    }
+
+    private int findJohnStamosTop(int index){
+        int cardTop = currentHand.get(4).getRank();
+
+        if (index < 0){
+            return  index;
+        }
+        if (cardTop == currentHand.get(index).getRank()){
+            kindCounter +=1;
+            return  findJohnStamosTop(index - 1);
+        }else if (cardTop != currentHand.get(index).getRank()){
+            return  findJohnStamosTop(index - 1);
+        }
+        return index;
+    }
+
+    private int findJohnStamosBottom(int index){
+        int cardBottom = currentHand.get(0).getRank();
+
+        if (index < 0){
+            return  index;
+        }
+        if (cardBottom == currentHand.get(index).getRank()){
+            kindCounter +=1;
+            return  findJohnStamosTop(index - 1);
+        }else if (cardBottom != currentHand.get(index).getRank()){
+            return  findJohnStamosTop(index - 1);
+        }
+        return index;
+    }
+
     private boolean checkForAKind(){
 
         if (findSameRank(numberOfCards - 1) < 0 && kindCounter == 4){
@@ -197,11 +241,13 @@ public class SimplePoker {
             kindCounter = 0;
             return true;
         }
-        else if (findSameRank(numberOfCards - 1) < 0 && kindCounter == 3){
+        kindCounter = 0;
+        if (findSameRank(numberOfCards - 1) < 0 && kindCounter == 3){
             System.out.println("Three of a kind!");
             kindCounter = 0;
             return  true;
         }
+        kindCounter = 0;
         return false;
     }
 
@@ -229,11 +275,13 @@ public class SimplePoker {
             kindCounter = 0;
             return true;
         }
-        else if (findRoyalPair(4) == 0 && kindCounter == 1){
+        kindCounter = 0;
+        if (findRoyalPair(4) == 0 && kindCounter == 1){
             System.out.println("Royal Pair!");
             kindCounter = 0;
             return true;
         }
+        kindCounter = 0;
         return false;
     }
 
@@ -296,6 +344,8 @@ public class SimplePoker {
         Scanner in = new Scanner( System.in );
         System.out.println("Enter bet: ");
         bet = in.nextInt();
+
+        balance += bet;
     }
 
     private void verifyBet(){
@@ -334,6 +384,8 @@ public class SimplePoker {
         Collections.sort(currentHand, new cardComparator());
         System.out.println("Hand: " + currentHand);
     }
+
+
 
 
     public void play()
@@ -380,6 +432,8 @@ public class SimplePoker {
         startGame.shuffleDeck();
         startGame.dealDeck();
         startGame.showHand();
+
+
 
 
     }
@@ -514,6 +568,7 @@ public class SimplePoker {
         SimplePoker mypokergame = new SimplePoker();
         mypokergame.testCheckHands();
         mypokergame.play();
+
     }
 
 

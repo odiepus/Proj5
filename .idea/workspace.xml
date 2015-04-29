@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0644c9aa-521e-416f-afc4-988c570e13b7" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Proj5/PJ5/Card.class" afterPath="$PROJECT_DIR$/out/production/Proj5/PJ5/Card.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Proj5/PJ5/Decks.class" afterPath="$PROJECT_DIR$/out/production/Proj5/PJ5/Decks.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Proj5/PJ5/PlayingCardException.class" afterPath="$PROJECT_DIR$/out/production/Proj5/PJ5/PlayingCardException.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Proj5/PJ5/SimplePoker$cardComparator.class" afterPath="$PROJECT_DIR$/out/production/Proj5/PJ5/SimplePoker$cardComparator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Proj5/PJ5/SimplePoker.class" afterPath="$PROJECT_DIR$/out/production/Proj5/PJ5/SimplePoker.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PJ5/SimplePoker.java" afterPath="$PROJECT_DIR$/src/PJ5/SimplePoker.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -24,20 +29,21 @@
     <favorites_list name="Proj5" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5537139">
+    <splitter split-orientation="horizontal" split-proportion="0.7587477">
       <split-first>
         <leaf>
           <file leaf-file-name="SimplePoker.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/PJ5/SimplePoker.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.36767036">
-                  <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="70" selection-end-column="30" />
+                <state vertical-scroll-proportion="0.44078946">
+                  <caret line="387" column="4" selection-start-line="387" selection-start-column="4" selection-end-line="387" selection-end-column="4" />
                   <folding>
+                    <element signature="e#2685#2686#0" expanded="true" />
                     <element signature="e#2722#2723#0" expanded="true" />
                     <element signature="e#2807#2808#0" expanded="true" />
                     <element signature="e#2844#2845#0" expanded="true" />
-                    <element signature="e#8789#8790#0" expanded="true" />
-                    <element signature="e#8853#8854#0" expanded="true" />
+                    <element signature="e#10192#10193#0" expanded="true" />
+                    <element signature="e#10256#10257#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -57,7 +63,7 @@
             <entry file="file://$PROJECT_DIR$/src/PJ5/PlayingCard.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+                  <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -70,7 +76,7 @@
           <file leaf-file-name="PlayingCard.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/PJ5/PlayingCard.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.36060607">
+                <state vertical-scroll-proportion="-0.37362638">
                   <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
                   <folding />
                 </state>
@@ -503,7 +509,13 @@
       <option name="project" value="LOCAL" />
       <updated>1430291352600</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="got checkforakind and checkforpairs working. working on only outputting what the hand is. e.g. royal flush is a royal flush and flush. i only want royal flush to print. also, kindCounter is holding an int thus it is not being reset when one of the other methods use it. it pops as two pairs for the set flush test code.">
+      <created>1430342355050</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1430342355050</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -512,21 +524,21 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32720232" sideWeight="0.4953125" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32720232" sideWeight="0.49322918" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32720232" sideWeight="0.5046875" order="2" side_tool="true" content_ui="tabs" x="678" y="331" width="850" height="514" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287841" sideWeight="0.49713877" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34158415" sideWeight="0.4488273" order="2" side_tool="true" content_ui="tabs" x="678" y="331" width="850" height="514" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871288" sideWeight="0.49520257" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1515625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15511727" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3339787" sideWeight="0.32552084" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34158415" sideWeight="0.55117273" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -554,7 +566,8 @@
     <MESSAGE value="created checkforstr8() checkforflush() and checkforstrtorflush(). latter has if else's that uses the 2 formers. returns nothing just prints out the statement if a match." />
     <MESSAGE value="Got the flush , straight and straight flush working." />
     <MESSAGE value="Got royalflush working. need to figure out how to only output royalflush and not flush." />
-    <option name="LAST_COMMIT_MESSAGE" value="Got royalflush working. need to figure out how to only output royalflush and not flush." />
+    <MESSAGE value="got checkforakind and checkforpairs working. working on only outputting what the hand is. e.g. royal flush is a royal flush and flush. i only want royal flush to print. also, kindCounter is holding an int thus it is not being reset when one of the other methods use it. it pops as two pairs for the set flush test code." />
+    <option name="LAST_COMMIT_MESSAGE" value="got checkforakind and checkforpairs working. working on only outputting what the hand is. e.g. royal flush is a royal flush and flush. i only want royal flush to print. also, kindCounter is holding an int thus it is not being reset when one of the other methods use it. it pops as two pairs for the set flush test code." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -567,23 +580,27 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/PJ5/SimplePoker.java</url>
-          <line>263</line>
+          <line>479</line>
           <properties />
-          <option name="timeStamp" value="23" />
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/PJ5/SimplePoker.java</url>
-          <line>425</line>
+          <line>244</line>
           <properties />
-          <option name="timeStamp" value="26" />
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="27" />
+      <option name="time" value="28" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="((SimplePoker)this).kindCounter" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -603,11 +620,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="197" column="6" selection-start-line="197" selection-start-column="6" selection-end-line="197" selection-end-column="6" />
           <folding>
+            <element signature="e#2685#2686#0" expanded="true" />
             <element signature="e#2722#2723#0" expanded="true" />
             <element signature="e#2807#2808#0" expanded="true" />
             <element signature="e#2844#2845#0" expanded="true" />
-            <element signature="e#8789#8790#0" expanded="true" />
-            <element signature="e#8853#8854#0" expanded="true" />
+            <element signature="e#10192#10193#0" expanded="true" />
+            <element signature="e#10256#10257#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -633,11 +651,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="197" column="6" selection-start-line="197" selection-start-column="6" selection-end-line="197" selection-end-column="6" />
           <folding>
+            <element signature="e#2685#2686#0" expanded="true" />
             <element signature="e#2722#2723#0" expanded="true" />
             <element signature="e#2807#2808#0" expanded="true" />
             <element signature="e#2844#2845#0" expanded="true" />
-            <element signature="e#8789#8790#0" expanded="true" />
-            <element signature="e#8853#8854#0" expanded="true" />
+            <element signature="e#10192#10193#0" expanded="true" />
+            <element signature="e#10256#10257#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -671,11 +690,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="177" column="6" selection-start-line="177" selection-start-column="4" selection-end-line="180" selection-end-column="29" />
           <folding>
+            <element signature="e#2685#2686#0" expanded="true" />
             <element signature="e#2722#2723#0" expanded="true" />
             <element signature="e#2807#2808#0" expanded="true" />
             <element signature="e#2844#2845#0" expanded="true" />
-            <element signature="e#8789#8790#0" expanded="true" />
-            <element signature="e#8853#8854#0" expanded="true" />
+            <element signature="e#10192#10193#0" expanded="true" />
+            <element signature="e#10256#10257#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -701,11 +721,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#2685#2686#0" expanded="true" />
             <element signature="e#2722#2723#0" expanded="true" />
             <element signature="e#2807#2808#0" expanded="true" />
             <element signature="e#2844#2845#0" expanded="true" />
-            <element signature="e#8789#8790#0" expanded="true" />
-            <element signature="e#8853#8854#0" expanded="true" />
+            <element signature="e#10192#10193#0" expanded="true" />
+            <element signature="e#10256#10257#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -723,11 +744,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="90" column="5" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
           <folding>
+            <element signature="e#2685#2686#0" expanded="true" />
             <element signature="e#2722#2723#0" expanded="true" />
             <element signature="e#2807#2808#0" expanded="true" />
             <element signature="e#2844#2845#0" expanded="true" />
-            <element signature="e#8789#8790#0" expanded="true" />
-            <element signature="e#8853#8854#0" expanded="true" />
+            <element signature="e#10192#10193#0" expanded="true" />
+            <element signature="e#10256#10257#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -753,11 +775,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="90" column="5" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
           <folding>
+            <element signature="e#2685#2686#0" expanded="true" />
             <element signature="e#2722#2723#0" expanded="true" />
             <element signature="e#2807#2808#0" expanded="true" />
             <element signature="e#2844#2845#0" expanded="true" />
-            <element signature="e#8789#8790#0" expanded="true" />
-            <element signature="e#8853#8854#0" expanded="true" />
+            <element signature="e#10192#10193#0" expanded="true" />
+            <element signature="e#10256#10257#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -783,11 +806,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="90" column="5" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
           <folding>
+            <element signature="e#2685#2686#0" expanded="true" />
             <element signature="e#2722#2723#0" expanded="true" />
             <element signature="e#2807#2808#0" expanded="true" />
             <element signature="e#2844#2845#0" expanded="true" />
-            <element signature="e#8789#8790#0" expanded="true" />
-            <element signature="e#8853#8854#0" expanded="true" />
+            <element signature="e#10192#10193#0" expanded="true" />
+            <element signature="e#10256#10257#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -813,11 +837,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="90" column="5" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
           <folding>
+            <element signature="e#2685#2686#0" expanded="true" />
             <element signature="e#2722#2723#0" expanded="true" />
             <element signature="e#2807#2808#0" expanded="true" />
             <element signature="e#2844#2845#0" expanded="true" />
-            <element signature="e#8789#8790#0" expanded="true" />
-            <element signature="e#8853#8854#0" expanded="true" />
+            <element signature="e#10192#10193#0" expanded="true" />
+            <element signature="e#10256#10257#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -843,11 +868,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="90" column="5" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
           <folding>
+            <element signature="e#2685#2686#0" expanded="true" />
             <element signature="e#2722#2723#0" expanded="true" />
             <element signature="e#2807#2808#0" expanded="true" />
             <element signature="e#2844#2845#0" expanded="true" />
-            <element signature="e#8789#8790#0" expanded="true" />
-            <element signature="e#8853#8854#0" expanded="true" />
+            <element signature="e#10192#10193#0" expanded="true" />
+            <element signature="e#10256#10257#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -873,11 +899,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#2685#2686#0" expanded="true" />
             <element signature="e#2722#2723#0" expanded="true" />
             <element signature="e#2807#2808#0" expanded="true" />
             <element signature="e#2844#2845#0" expanded="true" />
-            <element signature="e#8789#8790#0" expanded="true" />
-            <element signature="e#8853#8854#0" expanded="true" />
+            <element signature="e#10192#10193#0" expanded="true" />
+            <element signature="e#10256#10257#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -903,11 +930,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#2685#2686#0" expanded="true" />
             <element signature="e#2722#2723#0" expanded="true" />
             <element signature="e#2807#2808#0" expanded="true" />
             <element signature="e#2844#2845#0" expanded="true" />
-            <element signature="e#8789#8790#0" expanded="true" />
-            <element signature="e#8853#8854#0" expanded="true" />
+            <element signature="e#10192#10193#0" expanded="true" />
+            <element signature="e#10256#10257#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -933,11 +961,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="62" column="34" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="34" />
           <folding>
+            <element signature="e#2685#2686#0" expanded="true" />
             <element signature="e#2722#2723#0" expanded="true" />
             <element signature="e#2807#2808#0" expanded="true" />
             <element signature="e#2844#2845#0" expanded="true" />
-            <element signature="e#8789#8790#0" expanded="true" />
-            <element signature="e#8853#8854#0" expanded="true" />
+            <element signature="e#10192#10193#0" expanded="true" />
+            <element signature="e#10256#10257#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -963,11 +992,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="62" column="34" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="34" />
           <folding>
+            <element signature="e#2685#2686#0" expanded="true" />
             <element signature="e#2722#2723#0" expanded="true" />
             <element signature="e#2807#2808#0" expanded="true" />
             <element signature="e#2844#2845#0" expanded="true" />
-            <element signature="e#8789#8790#0" expanded="true" />
-            <element signature="e#8853#8854#0" expanded="true" />
+            <element signature="e#10192#10193#0" expanded="true" />
+            <element signature="e#10256#10257#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1006,21 +1036,22 @@
     <entry file="file://$PROJECT_DIR$/src/PJ5/PlayingCard.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PJ5/SimplePoker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.36767036">
-          <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="70" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.44078946">
+          <caret line="387" column="4" selection-start-line="387" selection-start-column="4" selection-end-line="387" selection-end-column="4" />
           <folding>
+            <element signature="e#2685#2686#0" expanded="true" />
             <element signature="e#2722#2723#0" expanded="true" />
             <element signature="e#2807#2808#0" expanded="true" />
             <element signature="e#2844#2845#0" expanded="true" />
-            <element signature="e#8789#8790#0" expanded="true" />
-            <element signature="e#8853#8854#0" expanded="true" />
+            <element signature="e#10192#10193#0" expanded="true" />
+            <element signature="e#10256#10257#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -63,6 +63,7 @@ public class SimplePoker {
     private List<Card> currentHand;
     private int balance;
     private int bet;
+    private int numberOfPairs;
 
     /** default constructor, set balance = startingBalance */
     public SimplePoker()
@@ -96,7 +97,26 @@ public class SimplePoker {
      */
     private void checkHands()                           //Will check hand for winner and print out result
     {
-        System.out.println("\n\t" + currentHand);
+        Collections.sort(currentHand, new cardComparator());
+        System.out.println(currentHand);
+
+
+
+
+
+
+    }
+
+    private int checkForStraight(int index){
+        if (index ==0){
+            return  index;
+        }
+        else if (Math.abs(currentHand.get(index - 1).getRank()) - Math.abs(currentHand.get(index).getRank()) ==1){
+            return checkForStraight(index--);
+        }
+        else{
+            return index;
+        }
     }
 
 
@@ -133,7 +153,21 @@ public class SimplePoker {
 
     }
 
+    private class cardComparator implements Comparator <Card>{
+        @Override
+        public int compare(Card cardA, Card cardB) {
 
+            if (cardA.getRank() < cardB.getRank()) {
+                return -1;
+            }
+            else if (cardA.getRank() > cardB.getRank()){
+                return 1;
+            }
+            else{
+                return 0;
+            }
+        }
+    }
 
 
     public void play()
@@ -287,4 +321,7 @@ public class SimplePoker {
         SimplePoker mypokergame = new SimplePoker();
         mypokergame.testCheckHands();
     }
+
+
+
 }

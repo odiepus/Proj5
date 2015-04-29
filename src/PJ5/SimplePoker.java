@@ -100,11 +100,19 @@ public class SimplePoker {
         Collections.sort(currentHand, new cardComparator());
         System.out.println(currentHand);
 
+        checkForStrtOrFlush();
+    }
 
-
-
-
-
+    private void checkForStrtOrFlush(){
+        if (checkForStraight(numberOfCards) == 0 && checkForFlush(4) == 0){
+            System.out.println("Straight Flush!");
+        }
+        else if (checkForStraight(numberOfCards) == 0){
+            System.out.println("Straight!");
+        }
+        else if (checkForFlush(4) == 0){
+            System.out.println("Flush!");
+        }
     }
 
     private int checkForStraight(int index){
@@ -112,6 +120,18 @@ public class SimplePoker {
             return  index;
         }
         else if (Math.abs(currentHand.get(index - 1).getRank()) - Math.abs(currentHand.get(index).getRank()) ==1){
+            return checkForStraight(index--);
+        }
+        else{
+            return index;
+        }
+    }
+
+    private int checkForFlush(int index){
+        if (index ==0){
+            return  index;
+        }
+        else if (Math.abs(currentHand.get(index - 1).getSuit()) - Math.abs(currentHand.get(index).getSuit()) == 0){
             return checkForStraight(index--);
         }
         else{

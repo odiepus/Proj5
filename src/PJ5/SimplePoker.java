@@ -63,7 +63,7 @@ public class SimplePoker {
     private List<Card> currentHand;
     private int balance;
     private int bet;
-    private int numberOfPairs;
+    private int kindCounter = 0;
 
     /** default constructor, set balance = startingBalance */
     public SimplePoker()
@@ -100,8 +100,15 @@ public class SimplePoker {
         Collections.sort(currentHand, new cardComparator());
         System.out.println(currentHand);
 
-        checkForRoyalFlush();
-        checkForStrtOrFlush();
+        if(checkForRoyalFlush()){}
+        else if(checkForStrtOrFlush()){}
+        else if(checkForAKind()){}
+        else if(checkForPairs()){}
+        else{
+            System.out.println("Sorry you lost this hand!");
+        }
+
+
     }
 
 
@@ -110,38 +117,42 @@ public class SimplePoker {
      *
      *************************************************/
 
-    private void checkForRoyalFlush(){
-        if (checkForFlush(4) == 0){
+    private boolean checkForRoyalFlush(){
+        if (isFlush(4) == 0){
             if (currentHand.get(4).getRank() == 13){
                 if (currentHand.get(3).getRank() == 12){
                     if(currentHand.get(2).getRank() == 11){
                         if (currentHand.get(1).getRank() == 10){
                             if (currentHand.get(0).getRank() == 1){
                                 System.out.println("Royal Flush!");
+                                return true;
                             }
                         }
                     }
                 }
             }
         }
+        return false;
     }
 
-    private void checkForStrtOrFlush(){
-        if ((checkForStraight(numberOfCards - 1) == 0) && (checkForFlush(4) == 0)){
+    private boolean checkForStrtOrFlush(){
+        if ((isStraight(numberOfCards - 1) == 0) && (isFlush(4) == 0)){
             System.out.println("Straight Flush!");
+            return true;
         }
-        else if (checkForStraight(numberOfCards - 1) == 0){
+        else if ((isStraight(numberOfCards - 1) == 0) && (isFlush(4) != 0)){
             System.out.println("Straight!");
+            return true;
         }
-        else {
-            if (checkForFlush(4) == 0) {
-                System.out.println("Flush!");
-            }
+        else if ((isFlush(4) == 0) && (isStraight(numberOfCards - 1) != 0)) {
+            System.out.println("Flush!");
+            return true;
         }
+        return false;
     }
 
 
-    private int checkForStraight(int index){
+    private int isStraight(int index){
         int cardA = 0, cardB = 0;
 
         if (index != 0) {
@@ -153,14 +164,14 @@ public class SimplePoker {
             return  index;
         }
         else if (cardB - cardA ==1){
-            return checkForStraight(index-1);
+            return isStraight(index - 1);
         }
         else{
             return index;
         }
     }
 
-    private int checkForFlush(int index){
+    private int isFlush(int index){
         int cardA = 0, cardB = 0;
 
         if (index != 0) {
@@ -172,12 +183,107 @@ public class SimplePoker {
             return  index;
         }
         else if (cardB - cardA  == 0){
-            return checkForFlush(index - 1);
+            return isFlush(index - 1);
         }
         else{
             return index;
         }
     }
+
+    private boolean checkForAKind(){
+
+        if (findSameRank(numberOfCards - 1) < 0 && kindCounter == 4){
+            System.out.println("Four of a kind!");
+            kindCounter = 0;
+            return true;
+        }
+        else if (findSameRank(numberOfCards - 1) < 0 && kindCounter == 3){
+            System.out.println("Three of a kind!");
+            kindCounter = 0;
+            return  true;
+        }
+        return false;
+    }
+
+
+    private int findSameRank(int index){
+        int cardMiddle = currentHand.get(2).getRank();
+
+        if (index < 0){
+            return  index;
+        }
+        else if (cardMiddle == (currentHand.get(index).getRank())){
+            kindCounter+=1;
+            return findSameRank(index - 1);
+        } else if(cardMiddle != (currentHand.get(index).getRank())){
+            return findSameRank(index - 1);
+        }
+        else{
+            return index;
+        }
+    }
+
+    private boolean checkForPairs(){
+        if (findPairs(4) == 0 && kindCounter == 2){
+            System.out.println("Two Pairs!");
+            kindCounter = 0;
+            return true;
+        }
+        else if (findRoyalPair(4) == 0 && kindCounter == 1){
+            System.out.println("Royal Pair!");
+            kindCounter = 0;
+            return true;
+        }
+        return false;
+    }
+
+    private int findPairs(int index){
+        int cardA = 0, cardB = 0;
+
+        if (index != 0) {
+            cardA = currentHand.get(index - 1).getRank();
+            cardB = currentHand.get(index).getRank();
+        }
+
+        if (index == 0){
+            return  index;
+        }
+        else if (cardB == cardA){
+            kindCounter +=1;
+            return findPairs(index - 1);
+        }
+        else if (cardB != cardA){
+            return findPairs(index - 1);
+        }
+        else{
+            return index;
+        }
+    }
+
+    private int findRoyalPair(int index){
+        int cardA = 0, cardB = 0;
+        int suitA = 0, suitB = -1;
+
+        if (index != 0) {
+            cardA = currentHand.get(index - 1).getRank();
+            cardB = currentHand.get(index).getRank();
+        }
+
+        if (index == 0){
+            return  index;
+        }
+        else if (cardB == cardA && (cardA == 11 || cardA == 12 || cardA == 13) ){
+            kindCounter +=1;
+            return findRoyalPair(index - 1);
+        }
+        else if (cardB != cardA){
+            return findRoyalPair(index - 1);
+        }
+        else{
+            return index;
+        }
+    }
+
 
 
 
@@ -206,8 +312,6 @@ public class SimplePoker {
         } catch (PlayingCardException e) {
             System.out.println("*** In catch block : PlayingCardException : msg : " + e.getMessage());
         }
-        System.out.println("\n\t" + currentHand);
-
     }
 
     private class cardComparator implements Comparator <Card>{
@@ -224,6 +328,11 @@ public class SimplePoker {
                 return 0;
             }
         }
+    }
+
+    private void showHand(){
+        Collections.sort(currentHand, new cardComparator());
+        System.out.println("Hand: " + currentHand);
     }
 
 
@@ -270,6 +379,7 @@ public class SimplePoker {
         startGame.getBet();
         startGame.shuffleDeck();
         startGame.dealDeck();
+        startGame.showHand();
 
 
     }
@@ -326,7 +436,7 @@ public class SimplePoker {
             currentHand.add(new Card(8,3));
             currentHand.add(new Card(8,0));
             currentHand.add(new Card(12,3));
-            currentHand.add(new Card(8,1));
+            currentHand.add(new Card(8, 1));
             currentHand.add(new Card(8, 2));
             System.out.println(currentHand);
             checkHands();
@@ -334,34 +444,60 @@ public class SimplePoker {
 
             // set Three of a Kind
             System.out.println("Set 3 o' kind");
-            currentHand.set(4, new Card(11,3));
+            currentHand.clear();
+            currentHand.add(new Card(8, 3));
+            currentHand.add(new Card(8, 0));
+            currentHand.add(new Card(12, 3));
+            currentHand.add(new Card(10, 1));
+            currentHand.add(new Card(8, 2));
             System.out.println(currentHand);
             checkHands();
             System.out.println("-----------------------------------\n");
 
             // set Full House
-            System.out.println("Set Stamos");
-            currentHand.set(2, new Card(11,1));
+            System.out.println("Set John Stamos");
+            currentHand.clear();
+            currentHand.add(new Card(8, 3));
+            currentHand.add(new Card(12, 0));
+            currentHand.add(new Card(12, 3));
+            currentHand.add(new Card(12, 1));
+            currentHand.add(new Card(8, 2));
             System.out.println(currentHand);
             checkHands();
             System.out.println("-----------------------------------\n");
 
             // set Two Pairs
             System.out.println("Set 2 pairs");
-            currentHand.set(1, new Card(9,1));
+            currentHand.clear();
+            currentHand.add(new Card(8, 3));
+            currentHand.add(new Card(10, 0));
+            currentHand.add(new Card(12, 3));
+            currentHand.add(new Card(10, 1));
+            currentHand.add(new Card(8, 2));
             System.out.println(currentHand);
             checkHands();
             System.out.println("-----------------------------------\n");
 
             // set Royal Pair
             System.out.println("Set Royal Pair");
-            currentHand.set(0, new Card(3,1));
+            currentHand.clear();
+            currentHand.add(new Card(8, 3));
+            currentHand.add(new Card(11, 0));
+            currentHand.add(new Card(11, 3));
+            currentHand.add(new Card(7, 1));
+            currentHand.add(new Card(2, 2));
             System.out.println(currentHand);
             checkHands();
             System.out.println("-----------------------------------\n");
 
             // non Royal Pair
-            currentHand.set(2, new Card(3,3));
+            System.out.println("Set a Pair");
+            currentHand.clear();
+            currentHand.add(new Card(8, 3));
+            currentHand.add(new Card(10, 0));
+            currentHand.add(new Card(12, 3));
+            currentHand.add(new Card(10, 1));
+            currentHand.add(new Card(1, 2));
             System.out.println(currentHand);
             checkHands();
             System.out.println("-----------------------------------\n");
@@ -377,6 +513,7 @@ public class SimplePoker {
     {
         SimplePoker mypokergame = new SimplePoker();
         mypokergame.testCheckHands();
+        mypokergame.play();
     }
 
 

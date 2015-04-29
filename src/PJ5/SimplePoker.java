@@ -100,6 +100,7 @@ public class SimplePoker {
         Collections.sort(currentHand, new cardComparator());
         System.out.println(currentHand);
 
+        checkForRoyalFlush();
         checkForStrtOrFlush();
     }
 
@@ -109,6 +110,21 @@ public class SimplePoker {
      *
      *************************************************/
 
+    private void checkForRoyalFlush(){
+        if (checkForFlush(4) == 0){
+            if (currentHand.get(4).getRank() == 13){
+                if (currentHand.get(3).getRank() == 12){
+                    if(currentHand.get(2).getRank() == 11){
+                        if (currentHand.get(1).getRank() == 10){
+                            if (currentHand.get(0).getRank() == 1){
+                                System.out.println("Royal Flush!");
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     private void checkForStrtOrFlush(){
         if ((checkForStraight(numberOfCards - 1) == 0) && (checkForFlush(4) == 0)){

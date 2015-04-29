@@ -200,8 +200,6 @@ public class SimplePoker {
         }
         kindCounter = 0;
         return false;
-
-
     }
 
     private int findJohnStamosTop(int index){
@@ -332,9 +330,6 @@ public class SimplePoker {
         }
     }
 
-
-
-
     private void showBalance(){
         System.out.println("Balance: " + balance + "\n");
     }
@@ -344,8 +339,6 @@ public class SimplePoker {
         Scanner in = new Scanner( System.in );
         System.out.println("Enter bet: ");
         bet = in.nextInt();
-
-        balance += bet;
     }
 
     private void verifyBet(){
@@ -385,6 +378,60 @@ public class SimplePoker {
         System.out.println("Hand: " + currentHand);
     }
 
+    private void whatCardsToKeep(){
+        System.out.println("Enter position(s) to keep. (e.g. 1 3 4): ");
+        Scanner in = new Scanner(System.in);
+
+        String userInput = in.nextLine();                                   //Following was taken from StackOverflow Samuel Frence and jlordo
+        StringTokenizer strgToken = new StringTokenizer(userInput);         //method of taking in a string of ints and putting them into int array
+
+        int size = strgToken.countTokens();
+
+        int[] positionsToHold = new int[size];
+
+        for (int i = 0; i < size; i++) {
+            positionsToHold[i] = Integer.parseInt((String) strgToken.nextElement());
+        }
+        in.close();
+
+        removeAndReplace(positionsToHold);
+        showHand();
+    }
+
+    private void removeAndReplace(int[] positions){
+        List <Card> newHand;
+        int fillWith = numberOfCards - positions.length;
+
+        try {
+            newHand = new ArrayList<Card>(oneDeck.deal(fillWith));
+            for (int i = 0; i < positions.length; i++) {
+                newHand.add(currentHand.get(positions[i]));
+            }
+            currentHand.clear();
+            for (int i = 0; i < numberOfCards; i++) {
+                currentHand.add(newHand.get(i));
+            }
+
+        } catch (PlayingCardException e) {
+            System.out.println("*** In catch block : PlayingCardException : msg : " + e.getMessage());
+        }
+    }
+
+    private boolean wouldYouLikeToPlayAGame(){
+        System.out.println("One more game (y or n)?");
+        Scanner inn = new Scanner(System.in);
+        String input;
+        input = inn.next();
+
+        if (input == "y"){
+
+            return true;
+        }
+        else{
+
+            return false;
+        }
+    }
 
 
 
@@ -422,16 +469,19 @@ public class SimplePoker {
          */
 
         // implement this method!
-
+        boolean play;
         showPayoutTable();
 
         SimplePoker startGame = new SimplePoker();
-
-        startGame.showBalance();
-        startGame.getBet();
-        startGame.shuffleDeck();
-        startGame.dealDeck();
-        startGame.showHand();
+        do {
+            startGame.showBalance();
+            startGame.getBet();
+            startGame.shuffleDeck();
+            startGame.dealDeck();
+            startGame.showHand();
+            startGame.whatCardsToKeep();
+            play = wouldYouLikeToPlayAGame();
+        }while (play);
 
 
 
@@ -566,7 +616,7 @@ public class SimplePoker {
     public static void main(String args[])
     {
         SimplePoker mypokergame = new SimplePoker();
-        mypokergame.testCheckHands();
+
         mypokergame.play();
 
     }

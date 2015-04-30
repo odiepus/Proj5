@@ -1,4 +1,5 @@
 package PJ5;
+import javax.swing.plaf.synth.SynthTextAreaUI;
 import java.util.*;
 
 /*
@@ -97,8 +98,8 @@ public class SimplePoker {
      */
     private void checkHands()                           //Will check hand for winner and print out result
     {
-        Collections.sort(currentHand, new cardComparator());
-        System.out.println(currentHand);
+       // Collections.sort(currentHand, new cardComparator());
+        //System.out.println(currentHand);
 
         if(checkForRoyalFlush()){}
         else if(checkForStrtOrFlush()){}
@@ -106,8 +107,10 @@ public class SimplePoker {
         else if(checkForAKind()){}
         else if(checkForPairs()){}
         else{
+
             System.out.println("Sorry you lost this hand!");
         }
+
 
 
     }
@@ -118,6 +121,10 @@ public class SimplePoker {
      *
      *************************************************/
 
+
+/*******************CHECK FOR WINNERS***************************************************/
+
+/*&*&*&*&*&*&*&*&*&*&*&START -- ROYAL FLUSH&**&*&*&*&*&*&*&*&*&*&*/
     private boolean checkForRoyalFlush(){
         if (isFlush(4) == 0){
             if (currentHand.get(4).getRank() == 13){
@@ -126,6 +133,8 @@ public class SimplePoker {
                         if (currentHand.get(1).getRank() == 10){
                             if (currentHand.get(0).getRank() == 1){
                                 System.out.println("Royal Flush!");
+                                System.out.println("You won $" + (250 * bet) + "!");
+                                balance += 250 * bet;
                                 return true;
                             }
                         }
@@ -135,18 +144,26 @@ public class SimplePoker {
         }
         return false;
     }
+    /*&*&*&*&*&*&*&*&*&*&*&END -- ROYAL FLUSH&**&*&*&*&*&*&*&*&*&*&*/
 
+    /*&*&*&*&*&*&*&*&*&*&*&START -- STR8 or FLUSH&**&*&*&*&*&*&*&*&*&*&*/
     private boolean checkForStrtOrFlush(){
         if ((isStraight(numberOfCards - 1) == 0) && (isFlush(4) == 0)){
             System.out.println("Straight Flush!");
+            System.out.println("You won $" + (50 * bet) + "!");
+            balance += 50 * bet;
             return true;
         }
         else if ((isStraight(numberOfCards - 1) == 0) && (isFlush(4) != 0)){
             System.out.println("Straight!");
+            System.out.println("You won $" + (5 * bet) + "!");
+            balance += 5 * bet;
             return true;
         }
         else if ((isFlush(4) == 0) && (isStraight(numberOfCards - 1) != 0)) {
             System.out.println("Flush!");
+            System.out.println("You won $" + (6 * bet) + "!");
+            balance += 6 * bet;
             return true;
         }
         kindCounter = 0;
@@ -192,9 +209,17 @@ public class SimplePoker {
         }
     }
 
+
+    /*&*&*&*&*&*&*&*&*&*&*&END -- STR8 or FLUSH&**&*&*&*&*&*&*&*&*&*&*/
+
+
+    /*&*&*&*&*&*&*&*&*&*&*&START -- JOHN STAMOS&**&*&*&*&*&*&*&*&*&*&*/
+
     private boolean checkForJohnStamos(){
         if (findJohnStamosTop(numberOfCards - 1) == -1 && findJohnStamosBottom(numberOfCards - 1) == -1 && kindCounter == 5){
             System.out.println("John Stamos!");
+            System.out.println("You won $" + (9 * bet) + "!");
+            balance += 9 * bet;
             kindCounter = 0;
             return true;
         }
@@ -231,17 +256,25 @@ public class SimplePoker {
         }
         return index;
     }
+    /*&*&*&*&*&*&*&*&*&*&*&END -- JOHN STAMOS&**&*&*&*&*&*&*&*&*&*&*/
+
+
+    /*&*&*&*&*&*&*&*&*&*&*&START -- 4/3 KIND&**&*&*&*&*&*&*&*&*&*&*/
 
     private boolean checkForAKind(){
 
         if (findSameRank(numberOfCards - 1) < 0 && kindCounter == 4){
             System.out.println("Four of a kind!");
+            System.out.println("You won $" + (25 * bet) + "!");
+            balance += 25 * bet;
             kindCounter = 0;
             return true;
         }
         kindCounter = 0;
         if (findSameRank(numberOfCards - 1) < 0 && kindCounter == 3){
             System.out.println("Three of a kind!");
+            System.out.println("You won $" + (3 * bet) + "!");
+            balance += 3 * bet;
             kindCounter = 0;
             return  true;
         }
@@ -266,16 +299,23 @@ public class SimplePoker {
             return index;
         }
     }
+    /*&*&*&*&*&*&*&*&*&*&*&END -- 4/3 KIND&**&*&*&*&*&*&*&*&*&*&*/
 
+
+    /*&*&*&*&*&*&*&*&*&*&*&START -- PAIRS &**&*&*&*&*&*&*&*&*&*&*/
     private boolean checkForPairs(){
         if (findPairs(4) == 0 && kindCounter == 2){
             System.out.println("Two Pairs!");
+            System.out.println("You won $" + (2 * bet) + "!");
+            balance += 2 * bet;
             kindCounter = 0;
             return true;
         }
         kindCounter = 0;
         if (findRoyalPair(4) == 0 && kindCounter == 1){
             System.out.println("Royal Pair!");
+            System.out.println("You won $" + (bet) + "!");
+            balance += bet;
             kindCounter = 0;
             return true;
         }
@@ -329,11 +369,14 @@ public class SimplePoker {
             return index;
         }
     }
+    /*&*&*&*&*&*&*&*&*&*&*&START -- PAIRS &**&*&*&*&*&*&*&*&*&*&*/
+
+
+    /*%*%*%*%*%*%*%*%*%*%*%START -- MONEY CONTROL%*%*%*%*%*%*%*%*/
 
     private void showBalance(){
-        System.out.println("Balance: " + balance + "\n");
+            System.out.println("Balance: " + balance + "\n");
     }
-
 
     private void getBet(){
         Scanner in = new Scanner( System.in );
@@ -342,8 +385,22 @@ public class SimplePoker {
     }
 
     private boolean verifyBet(){
-        if (bet > balance){return false;}
-        else {return true;}
+        if (bet <= balance){
+            balance -= bet;
+            return true;}
+        else {return false;}
+    }
+
+    private void showCurrentBalanceBet(){
+        System.out.println("Current Balance: $" + balance + "  Current Bet: $" + bet);
+    }
+    /*%*%*%*%*%*%*%*%*%*%*%END -- MONEY CONTROL%*%*%*%*%*%*%*%*/
+
+
+    /*%*%*%*%*%*%*%*%*%*%*%START -- CARD CONTROL%*%*%*%*%*%*%*%*/
+
+    private void resetDeck(){
+        oneDeck.reset();
     }
 
     private void shuffleDeck() {
@@ -380,10 +437,10 @@ public class SimplePoker {
     }
 
     private void whatCardsToKeep(){
-        System.out.println("Enter position(s) to keep. (e.g. 1 3 4): ");
+        System.out.println("Enter position(s) to keep. (e.g. 0 1 2 3 4): ");
         Scanner in = new Scanner(System.in);
 
-        String userInput = in.nextLine();                                   //Following was taken from StackOverflow Samuel Frence and jlordo
+        String userInput = in.nextLine();                                   //Following was taken from StackOverflow Samuel French and jlordo
         StringTokenizer strgToken = new StringTokenizer(userInput);         //method of taking in a string of ints and putting them into int array
 
         int size = strgToken.countTokens();
@@ -417,6 +474,7 @@ public class SimplePoker {
             System.out.println("*** In catch block : PlayingCardException : msg : " + e.getMessage());
         }
     }
+    /*%*%*%*%*%*%*%*%*%*%*%END -- CARD CONTROL%*%*%*%*%*%*%*%*/
 
     public void play()
     {
@@ -463,9 +521,14 @@ public class SimplePoker {
 
                 startGame.shuffleDeck();
                 startGame.dealDeck();
+                startGame.showCurrentBalanceBet();
                 startGame.showHand();
                 startGame.whatCardsToKeep();
                 startGame.checkHands();
+                if (startGame.balance <= 0){
+                    System.out.println("You have no more money. Goodbye!");
+                    break;
+                }
 
                 System.out.println("Play again? (y / n) ");
                 Scanner in = new Scanner(System.in);
@@ -478,9 +541,7 @@ public class SimplePoker {
             else {
                 System.out.println("Please enter a bet of $" + balance + " or below.");
             }
-
-
-
+            startGame.resetDeck();
         }
     }
 
@@ -522,7 +583,7 @@ public class SimplePoker {
 
             // set Flush
             System.out.println("Set Flush");
-            currentHand.set(4, new Card(5,3));
+            currentHand.set(0, new Card(5,3));
             System.out.println(currentHand);
             checkHands();
             System.out.println("-----------------------------------\n");
@@ -630,7 +691,7 @@ public class SimplePoker {
     public static void main(String args[])
     {
         SimplePoker mypokergame = new SimplePoker();
-       //mypokergame.testAHand();
+        //mypokergame.testCheckHands();
         mypokergame.play();
 
     }

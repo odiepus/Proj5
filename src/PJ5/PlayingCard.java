@@ -105,7 +105,6 @@ class Decks {
      */
     public Decks()
     {
-        // implement this method!
         originalDecks = new ArrayList<Card>();
         Card aCard;
 
@@ -136,7 +135,6 @@ class Decks {
      */
     public Decks(int n)
     {
-        // implement this method!
         numberDecks = n;
         originalDecks = new ArrayList<Card>();
         dealDecks = new ArrayList<Card>();
@@ -171,7 +169,6 @@ class Decks {
      */
     public void shuffle()
     {
-        // implement this method!
         int staticSizeOfDeck = dealDecks.size();
         Random randomGenerator = new Random();
 
@@ -195,7 +192,6 @@ class Decks {
      */
     public List<Card> deal(int numberCards) throws PlayingCardException
     {
-        // implement this method!
         List <Card> hand = new ArrayList<Card>();
 
         if (numberCards > dealDecks.size()){
@@ -218,7 +214,7 @@ class Decks {
         dealDecks.clear();
         for (int i = 0; i < numberDecks ; i++) {
             for (int j = 0, originalDecksSize = originalDecks.size(); j <  originalDecksSize; j++) {
-            dealDecks.add(originalDecks.get(j));
+                dealDecks.add(originalDecks.get(j));
             }
         }
 
@@ -285,8 +281,6 @@ class Decks {
                     System.out.println("*** In catch block : PlayingCardException : msg : "+e.getMessage());
                 }
             }
-
-
             decks.reset();
         }
     }

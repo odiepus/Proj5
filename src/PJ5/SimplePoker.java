@@ -48,7 +48,7 @@ import java.util.*;
 public class SimplePoker {
 
     // default constant values
-    private static final int startingBalance=100;
+    private static final int startingBalance=1000;
     private static final int numberOfCards=5;
 
     // default constant payout value and currentHand types
@@ -98,8 +98,7 @@ public class SimplePoker {
      */
     private void checkHands()                           //Will check hand for winner and print out result
     {
-       // Collections.sort(currentHand, new cardComparator());
-        //System.out.println(currentHand);
+       Collections.sort(currentHand, new cardComparator());/*---------------------->>>*/      //DO NOT REMOVE used to put cards in order. check methods rely on cards being in order
 
         if(checkForRoyalFlush()){}
         else if(checkForStrtOrFlush()){}
@@ -107,12 +106,8 @@ public class SimplePoker {
         else if(checkForAKind()){}
         else if(checkForPairs()){}
         else{
-
-            System.out.println("Sorry you lost this hand!");
+            System.out.println("Bad Beat!  (You lost)");
         }
-
-
-
     }
 
 
@@ -149,7 +144,7 @@ public class SimplePoker {
     /*&*&*&*&*&*&*&*&*&*&*&START -- STR8 or FLUSH&**&*&*&*&*&*&*&*&*&*&*/
     private boolean checkForStrtOrFlush(){
         if ((isStraight(numberOfCards - 1) == 0) && (isFlush(4) == 0)){
-            System.out.println("Straight Flush!");
+            System.out.println("Steel Wheel!!  (Straight Flush)");
             System.out.println("You won $" + (50 * bet) + "!");
             balance += 50 * bet;
             return true;
@@ -217,7 +212,7 @@ public class SimplePoker {
 
     private boolean checkForJohnStamos(){
         if (findJohnStamosTop(numberOfCards - 1) == -1 && findJohnStamosBottom(numberOfCards - 1) == -1 && kindCounter == 5){
-            System.out.println("John Stamos!");
+            System.out.println("John Stamos!   (Full House)");
             System.out.println("You won $" + (9 * bet) + "!");
             balance += 9 * bet;
             kindCounter = 0;
@@ -264,7 +259,7 @@ public class SimplePoker {
     private boolean checkForAKind(){
 
         if (findSameRank(numberOfCards - 1) < 0 && kindCounter == 4){
-            System.out.println("Four of a kind!");
+            System.out.println("Quads!!  (Four of a kind)");
             System.out.println("You won $" + (25 * bet) + "!");
             balance += 25 * bet;
             kindCounter = 0;
@@ -272,7 +267,7 @@ public class SimplePoker {
         }
         kindCounter = 0;
         if (findSameRank(numberOfCards - 1) < 0 && kindCounter == 3){
-            System.out.println("Three of a kind!");
+            System.out.println("Trips!! (Three of a kind)");
             System.out.println("You won $" + (3 * bet) + "!");
             balance += 3 * bet;
             kindCounter = 0;
@@ -451,7 +446,6 @@ public class SimplePoker {
             positionsToHold[i] = Integer.parseInt((String) strgToken.nextElement());
         }
 
-
         removeAndReplace(positionsToHold);
         showHand();
     }
@@ -526,7 +520,7 @@ public class SimplePoker {
                 startGame.whatCardsToKeep();
                 startGame.checkHands();
                 if (startGame.balance <= 0){
-                    System.out.println("You have no more money. Goodbye!");
+                    System.out.println("You have no more money. Now scram!!!");
                     break;
                 }
 
@@ -534,168 +528,115 @@ public class SimplePoker {
                 Scanner in = new Scanner(System.in);
                 String input = in.nextLine();
                 if (input.charAt(0) == 'n'){
-                    System.out.println("Goodbye!");
+                    System.out.println("Go cry to your mommy!!");
                     break;
                 }
             }
             else {
                 System.out.println("Please enter a bet of $" + balance + " or below.");
             }
+
+            System.out.println("Would you like to see the payout table? ");
+            Scanner in = new Scanner(System.in);
+            String input = in.nextLine();
+            if (input.charAt(0) == 'y'){
+                showPayoutTable();
+            }
+
             startGame.resetDeck();
         }
     }
-
-
-
 
     /** Do not modify this. It is used to test checkHands() method 
      *  checkHands() should print your current hand type
      */
     public void testCheckHands()
     {
-        try {
-            currentHand = new ArrayList<Card>();
+       try {
+    		currentHand = new ArrayList<Card>();
 
-            // set Royal Flush
-            System.out.println("Set Royal Flush");
-            currentHand.add(new Card(1,3));
-            currentHand.add(new Card(10,3));
-            currentHand.add(new Card(12,3));
-            currentHand.add(new Card(11, 3));
-            currentHand.add(new Card(13, 3));
-            System.out.println(currentHand);
-            checkHands();
-            System.out.println("-----------------------------------\n");
+    		// set Royal Flush
+    		currentHand.add(new Card(1,3));
+    		currentHand.add(new Card(10,3));
+    		currentHand.add(new Card(12,3));
+    		currentHand.add(new Card(11,3));
+    		currentHand.add(new Card(13,3));
+    		System.out.println(currentHand);
+    		checkHands();
+    		System.out.println("-----------------------------------");
 
-            // set Straight Flush
-            System.out.println("Set Straight Flush");
-            currentHand.set(0, new Card(9, 3));
-            System.out.println(currentHand);
-            checkHands();
-            System.out.println("-----------------------------------\n");
+    		// set Straight Flush
+    		currentHand.set(0,new Card(9,3));
+    		System.out.println(currentHand);
+    		checkHands();
+    		System.out.println("-----------------------------------");
 
-            // set Straight
-            System.out.println("Set Straight");
-            currentHand.set(4, new Card(8,1));
-            System.out.println(currentHand);
-            checkHands();
-            System.out.println("-----------------------------------\n");
+    		// set Straight
+    		currentHand.set(4, new Card(8,1));
+    		System.out.println(currentHand);
+    		checkHands();
+    		System.out.println("-----------------------------------");
 
-            // set Flush
-            System.out.println("Set Flush");
-            currentHand.set(0, new Card(5,3));
-            System.out.println(currentHand);
-            checkHands();
-            System.out.println("-----------------------------------\n");
+    		// set Flush
+    		currentHand.set(4, new Card(5,3));
+    		System.out.println(currentHand);
+    		checkHands();
+    		System.out.println("-----------------------------------");
 
-            // "Royal Pair" , "Two Pairs" , "Three of a Kind", "Straight", "Flush	",
-            // "Full House", "Four of a Kind", "Straight Flush", "Royal Flush" };
+    		// "Royal Pair" , "Two Pairs" , "Three of a Kind", "Straight", "Flush	",
+    	 	// "Full House", "Four of a Kind", "Straight Flush", "Royal Flush" };
 
-            // set Four of a Kind
-            System.out.println("Set 4 o' kind");
-            currentHand.clear();
-            currentHand.add(new Card(8, 3));
-            currentHand.add(new Card(8, 0));
-            currentHand.add(new Card(12,3));
-            currentHand.add(new Card(8, 1));
-            currentHand.add(new Card(8, 2));
-            System.out.println(currentHand);
-            checkHands();
-            System.out.println("-----------------------------------\n");
+    		// set Four of a Kind
+    		currentHand.clear();
+    		currentHand.add(new Card(8,3));
+    		currentHand.add(new Card(8,0));
+    		currentHand.add(new Card(12,3));
+    		currentHand.add(new Card(8,1));
+    		currentHand.add(new Card(8,2));
+    		System.out.println(currentHand);
+    		checkHands();
+    		System.out.println("-----------------------------------");
 
-            // set Three of a Kind
-            System.out.println("Set 3 o' kind");
-            currentHand.clear();
-            currentHand.add(new Card(8, 3));
-            currentHand.add(new Card(8, 0));
-            currentHand.add(new Card(12, 3));
-            currentHand.add(new Card(10, 1));
-            currentHand.add(new Card(8, 2));
-            System.out.println(currentHand);
-            checkHands();
-            System.out.println("-----------------------------------\n");
+    		// set Three of a Kind
+    		currentHand.set(4, new Card(11,3));
+    		System.out.println(currentHand);
+    		checkHands();
+    		System.out.println("-----------------------------------");
 
-            // set Full House
-            System.out.println("Set John Stamos");
-            currentHand.clear();
-            currentHand.add(new Card(8, 3));
-            currentHand.add(new Card(12, 0));
-            currentHand.add(new Card(12, 3));
-            currentHand.add(new Card(12, 1));
-            currentHand.add(new Card(8, 2));
-            System.out.println(currentHand);
-            checkHands();
-            System.out.println("-----------------------------------\n");
+    		// set Full House
+    		currentHand.set(2, new Card(11,1));
+    		System.out.println(currentHand);
+    		checkHands();
+    		System.out.println("-----------------------------------");
 
-            // set Two Pairs
-            System.out.println("Set 2 pairs");
-            currentHand.clear();
-            currentHand.add(new Card(8, 3));
-            currentHand.add(new Card(10, 0));
-            currentHand.add(new Card(12, 3));
-            currentHand.add(new Card(10, 1));
-            currentHand.add(new Card(8, 2));
-            System.out.println(currentHand);
-            checkHands();
-            System.out.println("-----------------------------------\n");
+    		// set Two Pairs
+    		currentHand.set(1, new Card(9,1));
+    		System.out.println(currentHand);
+    		checkHands();
+    		System.out.println("-----------------------------------");
 
-            // set Royal Pair
-            System.out.println("Set Royal Pair");
-            currentHand.clear();
-            currentHand.add(new Card(8, 3));
-            currentHand.add(new Card(11, 0));
-            currentHand.add(new Card(11, 3));
-            currentHand.add(new Card(7, 1));
-            currentHand.add(new Card(2, 2));
-            System.out.println(currentHand);
-            checkHands();
-            System.out.println("-----------------------------------\n");
+    		// set Royal Pair
+    		currentHand.set(0, new Card(3,1));
+    		System.out.println(currentHand);
+    		checkHands();
+    		System.out.println("-----------------------------------");
 
-            // non Royal Pair
-            System.out.println("Set a Pair");
-            currentHand.clear();
-            currentHand.add(new Card(8, 3));
-            currentHand.add(new Card(10, 0));
-            currentHand.add(new Card(12, 3));
-            currentHand.add(new Card(10, 1));
-            currentHand.add(new Card(1, 2));
-            System.out.println(currentHand);
-            checkHands();
-            System.out.println("-----------------------------------\n");
-        }
-        catch (Exception e)
-        {
-            System.out.println(e.getMessage());
-        }
-    }
-
-    public void testAHand(){
-        try {
-            currentHand = new ArrayList<Card>();
-            currentHand.clear();
-            currentHand.add(new Card(8, 3));
-            currentHand.add(new Card(12, 0));
-            currentHand.add(new Card(12, 3));
-            currentHand.add(new Card(12, 1));
-            currentHand.add(new Card(8, 2));
-            checkHands();
-            System.out.println("-----------------------------------\n");
-        }
-        catch (Exception e)
-        {
-            System.out.println(e.getMessage());
-        }
+    		// non Royal Pair
+    		currentHand.set(2, new Card(3,3));
+    		System.out.println(currentHand);
+    		checkHands();
+    		System.out.println("-----------------------------------");
+      	}
+      	catch (Exception e)
+      	{
+		  System.out.println(e.getMessage());
+      	}
     }
 
     /* Quick testCheckHands() */
     public static void main(String args[])
     {
-        SimplePoker mypokergame = new SimplePoker();
-        //mypokergame.testCheckHands();
-        mypokergame.play();
-
+	   SimplePoker mypokergame = new SimplePoker();
+	   mypokergame.testCheckHands();
     }
-
-
-
 }

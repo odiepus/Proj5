@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0644c9aa-521e-416f-afc4-988c570e13b7" name="Default" comment="added resetDeck() to reset teh deck before shuffle and deal.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Proj5/PJ5/SimplePoker$cardComparator.class" afterPath="$PROJECT_DIR$/out/production/Proj5/PJ5/SimplePoker$cardComparator.class" />
+    <list default="true" id="0644c9aa-521e-416f-afc4-988c570e13b7" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Proj5/PJ5/Decks.class" afterPath="$PROJECT_DIR$/out/production/Proj5/PJ5/Decks.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Proj5/PJ5/SimplePoker.class" afterPath="$PROJECT_DIR$/out/production/Proj5/PJ5/SimplePoker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PJ5/PlayingCard.java" afterPath="$PROJECT_DIR$/src/PJ5/PlayingCard.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PJ5/SimplePoker.java" afterPath="$PROJECT_DIR$/src/PJ5/SimplePoker.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -30,24 +31,26 @@
       <file leaf-file-name="SimplePoker.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/PJ5/SimplePoker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7818182">
-              <caret line="543" column="34" selection-start-line="543" selection-start-column="34" selection-end-line="543" selection-end-column="34" />
+            <state vertical-scroll-proportion="6.04">
+              <caret line="544" column="0" selection-start-line="544" selection-start-column="0" selection-end-line="544" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2732#2733#0" expanded="true" />
-                <element signature="e#2769#2770#0" expanded="true" />
-                <element signature="e#2854#2855#0" expanded="true" />
-                <element signature="e#2891#2892#0" expanded="true" />
-                <element signature="e#12005#12006#0" expanded="true" />
-                <element signature="e#12073#12074#0" expanded="true" />
-                <element signature="e#12677#12678#0" expanded="true" />
-                <element signature="e#12708#12709#0" expanded="true" />
-                <element signature="e#12742#12743#0" expanded="true" />
-                <element signature="e#12775#12776#0" expanded="true" />
-                <element signature="method#testCheckHands#0;class#SimplePoker#0" expanded="false" />
-                <marker date="1430421350655" expanded="true" signature="17154:21840" placeholder="..." />
-                <marker date="1430421350655" expanded="false" signature="21775:21834" placeholder="{...}" />
-                <marker date="1430421350655" expanded="false" signature="21883:22303" placeholder="{...}" />
+                <element signature="docComment;method#SimplePoker#0;class#SimplePoker#0" expanded="false" />
+                <element signature="e#2733#2734#0" expanded="true" />
+                <element signature="e#2770#2771#0" expanded="true" />
+                <element signature="docComment;method#SimplePoker#1;class#SimplePoker#0" expanded="false" />
+                <element signature="e#2855#2856#0" expanded="true" />
+                <element signature="e#2892#2893#0" expanded="true" />
+                <element signature="docComment;method#showPayoutTable#0;class#SimplePoker#0" expanded="false" />
+                <element signature="docComment;method#checkHands#0;class#SimplePoker#0" expanded="false" />
+                <element signature="docComment;method#checkForRoyalFlush#0;class#SimplePoker#0" expanded="false" />
+                <element signature="e#12123#12124#0" expanded="true" />
+                <element signature="e#12191#12192#0" expanded="true" />
+                <element signature="e#12795#12796#0" expanded="true" />
+                <element signature="e#12826#12827#0" expanded="true" />
+                <element signature="e#12860#12861#0" expanded="true" />
+                <element signature="e#12893#12894#0" expanded="true" />
+                <marker date="1430424481216" expanded="true" signature="15244:16108" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -67,9 +70,9 @@
         <entry file="file://$PROJECT_DIR$/src/PJ5/PlayingCard.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
               <folding>
-                <element signature="e#5915#5921#0" expanded="true" />
+                <element signature="e#5779#5785#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -224,6 +227,22 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="69" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="69" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="69" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="683" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="69" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="69" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="69" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="683" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -231,7 +250,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SimplePoker">
+  <component name="RunManager" selected="Application.TestPlaySimplePoker">
     <configuration default="false" name="Card" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -462,8 +481,8 @@
     </list>
     <recent_temporary>
       <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Application.SimplePoker" />
-        <item index="1" class="java.lang.String" itemvalue="Application.TestPlaySimplePoker" />
+        <item index="0" class="java.lang.String" itemvalue="Application.TestPlaySimplePoker" />
+        <item index="1" class="java.lang.String" itemvalue="Application.SimplePoker" />
         <item index="2" class="java.lang.String" itemvalue="Application.Decks" />
         <item index="3" class="java.lang.String" itemvalue="Application.Card" />
       </list>
@@ -546,22 +565,28 @@
       <option name="project" value="LOCAL" />
       <updated>1430416994371</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="added resetDeck() to reset teh deck before shuffle and deal. added if statement that checks balance after current hand is checked for win/loss, if balnce is 0 then game ends.">
+      <created>1430421433657</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1430421433657</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32673267" sideWeight="0.48667377" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32673267" sideWeight="0.48454157" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26435643" sideWeight="0.5133262" order="2" side_tool="true" content_ui="tabs" x="678" y="331" width="850" height="514" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32970297" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.9227723" sideWeight="0.45735607" order="2" side_tool="true" content_ui="tabs" x="678" y="331" width="850" height="514" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871288" sideWeight="0.49520257" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15991472" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -569,7 +594,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26435643" sideWeight="0.54477614" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.9227723" sideWeight="0.5426439" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -602,28 +627,29 @@
     <MESSAGE value="Working on play() got the draw part done but i cant get the loop to work." />
     <MESSAGE value="fixed while loop in play() now I gotta work on mechanix of bet system and figure out hwo to pay out and remove bet from balance." />
     <MESSAGE value="fixed bug in findJohnStamosBottom. created verifybet(). returns boolean; checks if bet &gt; balance. in play() verifybet() is gatekeeper to rest of game. found way to break from while loop withing play() when asking if wants to cont' to play." />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed bug in findJohnStamosBottom. created verifybet(). returns boolean; checks if bet &gt; balance. in play() verifybet() is gatekeeper to rest of game. found way to break from while loop withing play() when asking if wants to cont' to play." />
+    <MESSAGE value="added resetDeck() to reset teh deck before shuffle and deal. added if statement that checks balance after current hand is checked for win/loss, if balnce is 0 then game ends." />
+    <option name="LAST_COMMIT_MESSAGE" value="added resetDeck() to reset teh deck before shuffle and deal. added if statement that checks balance after current hand is checked for win/loss, if balnce is 0 then game ends." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/PJ5/SimplePoker.java</url>
-          <line>110</line>
-          <properties />
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/src/PJ5/SimplePoker.java</url>
           <line>64</line>
           <properties field="balance" class="PJ5.SimplePoker" />
           <option name="timeStamp" value="35" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/PJ5/SimplePoker.java</url>
+          <line>102</line>
+          <properties />
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="37" />
+      <option name="time" value="38" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -643,20 +669,22 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2732#2733#0" expanded="true" />
-            <element signature="e#2769#2770#0" expanded="true" />
-            <element signature="e#2854#2855#0" expanded="true" />
-            <element signature="e#2891#2892#0" expanded="true" />
-            <element signature="e#12005#12006#0" expanded="true" />
-            <element signature="e#12073#12074#0" expanded="true" />
-            <element signature="e#12677#12678#0" expanded="true" />
-            <element signature="e#12708#12709#0" expanded="true" />
-            <element signature="e#12742#12743#0" expanded="true" />
-            <element signature="e#12775#12776#0" expanded="true" />
-            <element signature="method#testCheckHands#0;class#SimplePoker#0" expanded="false" />
-            <marker date="1430421350655" expanded="true" signature="17154:21840" placeholder="..." />
-            <marker date="1430421350655" expanded="false" signature="21775:21834" placeholder="{...}" />
-            <marker date="1430421350655" expanded="false" signature="21883:22303" placeholder="{...}" />
+            <element signature="docComment;method#SimplePoker#0;class#SimplePoker#0" expanded="false" />
+            <element signature="e#2733#2734#0" expanded="true" />
+            <element signature="e#2770#2771#0" expanded="true" />
+            <element signature="docComment;method#SimplePoker#1;class#SimplePoker#0" expanded="false" />
+            <element signature="e#2855#2856#0" expanded="true" />
+            <element signature="e#2892#2893#0" expanded="true" />
+            <element signature="docComment;method#showPayoutTable#0;class#SimplePoker#0" expanded="false" />
+            <element signature="docComment;method#checkHands#0;class#SimplePoker#0" expanded="false" />
+            <element signature="docComment;method#checkForRoyalFlush#0;class#SimplePoker#0" expanded="false" />
+            <element signature="e#12123#12124#0" expanded="true" />
+            <element signature="e#12191#12192#0" expanded="true" />
+            <element signature="e#12795#12796#0" expanded="true" />
+            <element signature="e#12826#12827#0" expanded="true" />
+            <element signature="e#12860#12861#0" expanded="true" />
+            <element signature="e#12893#12894#0" expanded="true" />
+            <marker date="1430424481216" expanded="true" signature="15244:16108" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -682,7 +710,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding>
-            <element signature="e#5915#5921#0" expanded="true" />
+            <element signature="e#5779#5785#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -701,20 +729,22 @@
           <caret line="197" column="6" selection-start-line="197" selection-start-column="6" selection-end-line="197" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2732#2733#0" expanded="true" />
-            <element signature="e#2769#2770#0" expanded="true" />
-            <element signature="e#2854#2855#0" expanded="true" />
-            <element signature="e#2891#2892#0" expanded="true" />
-            <element signature="e#12005#12006#0" expanded="true" />
-            <element signature="e#12073#12074#0" expanded="true" />
-            <element signature="e#12677#12678#0" expanded="true" />
-            <element signature="e#12708#12709#0" expanded="true" />
-            <element signature="e#12742#12743#0" expanded="true" />
-            <element signature="e#12775#12776#0" expanded="true" />
-            <element signature="method#testCheckHands#0;class#SimplePoker#0" expanded="false" />
-            <marker date="1430421350655" expanded="true" signature="17154:21840" placeholder="..." />
-            <marker date="1430421350655" expanded="false" signature="21775:21834" placeholder="{...}" />
-            <marker date="1430421350655" expanded="false" signature="21883:22303" placeholder="{...}" />
+            <element signature="docComment;method#SimplePoker#0;class#SimplePoker#0" expanded="false" />
+            <element signature="e#2733#2734#0" expanded="true" />
+            <element signature="e#2770#2771#0" expanded="true" />
+            <element signature="docComment;method#SimplePoker#1;class#SimplePoker#0" expanded="false" />
+            <element signature="e#2855#2856#0" expanded="true" />
+            <element signature="e#2892#2893#0" expanded="true" />
+            <element signature="docComment;method#showPayoutTable#0;class#SimplePoker#0" expanded="false" />
+            <element signature="docComment;method#checkHands#0;class#SimplePoker#0" expanded="false" />
+            <element signature="docComment;method#checkForRoyalFlush#0;class#SimplePoker#0" expanded="false" />
+            <element signature="e#12123#12124#0" expanded="true" />
+            <element signature="e#12191#12192#0" expanded="true" />
+            <element signature="e#12795#12796#0" expanded="true" />
+            <element signature="e#12826#12827#0" expanded="true" />
+            <element signature="e#12860#12861#0" expanded="true" />
+            <element signature="e#12893#12894#0" expanded="true" />
+            <marker date="1430424481216" expanded="true" signature="15244:16108" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -724,7 +754,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding>
-            <element signature="e#5915#5921#0" expanded="true" />
+            <element signature="e#5779#5785#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -743,20 +773,22 @@
           <caret line="197" column="6" selection-start-line="197" selection-start-column="6" selection-end-line="197" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2732#2733#0" expanded="true" />
-            <element signature="e#2769#2770#0" expanded="true" />
-            <element signature="e#2854#2855#0" expanded="true" />
-            <element signature="e#2891#2892#0" expanded="true" />
-            <element signature="e#12005#12006#0" expanded="true" />
-            <element signature="e#12073#12074#0" expanded="true" />
-            <element signature="e#12677#12678#0" expanded="true" />
-            <element signature="e#12708#12709#0" expanded="true" />
-            <element signature="e#12742#12743#0" expanded="true" />
-            <element signature="e#12775#12776#0" expanded="true" />
-            <element signature="method#testCheckHands#0;class#SimplePoker#0" expanded="false" />
-            <marker date="1430421350655" expanded="true" signature="17154:21840" placeholder="..." />
-            <marker date="1430421350655" expanded="false" signature="21775:21834" placeholder="{...}" />
-            <marker date="1430421350655" expanded="false" signature="21883:22303" placeholder="{...}" />
+            <element signature="docComment;method#SimplePoker#0;class#SimplePoker#0" expanded="false" />
+            <element signature="e#2733#2734#0" expanded="true" />
+            <element signature="e#2770#2771#0" expanded="true" />
+            <element signature="docComment;method#SimplePoker#1;class#SimplePoker#0" expanded="false" />
+            <element signature="e#2855#2856#0" expanded="true" />
+            <element signature="e#2892#2893#0" expanded="true" />
+            <element signature="docComment;method#showPayoutTable#0;class#SimplePoker#0" expanded="false" />
+            <element signature="docComment;method#checkHands#0;class#SimplePoker#0" expanded="false" />
+            <element signature="docComment;method#checkForRoyalFlush#0;class#SimplePoker#0" expanded="false" />
+            <element signature="e#12123#12124#0" expanded="true" />
+            <element signature="e#12191#12192#0" expanded="true" />
+            <element signature="e#12795#12796#0" expanded="true" />
+            <element signature="e#12826#12827#0" expanded="true" />
+            <element signature="e#12860#12861#0" expanded="true" />
+            <element signature="e#12893#12894#0" expanded="true" />
+            <marker date="1430424481216" expanded="true" signature="15244:16108" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -766,7 +798,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding>
-            <element signature="e#5915#5921#0" expanded="true" />
+            <element signature="e#5779#5785#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -784,7 +816,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="76" column="53" selection-start-line="76" selection-start-column="53" selection-end-line="76" selection-end-column="53" />
           <folding>
-            <element signature="e#5915#5921#0" expanded="true" />
+            <element signature="e#5779#5785#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -795,20 +827,22 @@
           <caret line="177" column="6" selection-start-line="177" selection-start-column="4" selection-end-line="180" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2732#2733#0" expanded="true" />
-            <element signature="e#2769#2770#0" expanded="true" />
-            <element signature="e#2854#2855#0" expanded="true" />
-            <element signature="e#2891#2892#0" expanded="true" />
-            <element signature="e#12005#12006#0" expanded="true" />
-            <element signature="e#12073#12074#0" expanded="true" />
-            <element signature="e#12677#12678#0" expanded="true" />
-            <element signature="e#12708#12709#0" expanded="true" />
-            <element signature="e#12742#12743#0" expanded="true" />
-            <element signature="e#12775#12776#0" expanded="true" />
-            <element signature="method#testCheckHands#0;class#SimplePoker#0" expanded="false" />
-            <marker date="1430421350655" expanded="true" signature="17154:21840" placeholder="..." />
-            <marker date="1430421350655" expanded="false" signature="21775:21834" placeholder="{...}" />
-            <marker date="1430421350655" expanded="false" signature="21883:22303" placeholder="{...}" />
+            <element signature="docComment;method#SimplePoker#0;class#SimplePoker#0" expanded="false" />
+            <element signature="e#2733#2734#0" expanded="true" />
+            <element signature="e#2770#2771#0" expanded="true" />
+            <element signature="docComment;method#SimplePoker#1;class#SimplePoker#0" expanded="false" />
+            <element signature="e#2855#2856#0" expanded="true" />
+            <element signature="e#2892#2893#0" expanded="true" />
+            <element signature="docComment;method#showPayoutTable#0;class#SimplePoker#0" expanded="false" />
+            <element signature="docComment;method#checkHands#0;class#SimplePoker#0" expanded="false" />
+            <element signature="docComment;method#checkForRoyalFlush#0;class#SimplePoker#0" expanded="false" />
+            <element signature="e#12123#12124#0" expanded="true" />
+            <element signature="e#12191#12192#0" expanded="true" />
+            <element signature="e#12795#12796#0" expanded="true" />
+            <element signature="e#12826#12827#0" expanded="true" />
+            <element signature="e#12860#12861#0" expanded="true" />
+            <element signature="e#12893#12894#0" expanded="true" />
+            <marker date="1430424481216" expanded="true" signature="15244:16108" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -826,7 +860,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="76" column="53" selection-start-line="76" selection-start-column="53" selection-end-line="76" selection-end-column="53" />
           <folding>
-            <element signature="e#5915#5921#0" expanded="true" />
+            <element signature="e#5779#5785#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -837,20 +871,22 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2732#2733#0" expanded="true" />
-            <element signature="e#2769#2770#0" expanded="true" />
-            <element signature="e#2854#2855#0" expanded="true" />
-            <element signature="e#2891#2892#0" expanded="true" />
-            <element signature="e#12005#12006#0" expanded="true" />
-            <element signature="e#12073#12074#0" expanded="true" />
-            <element signature="e#12677#12678#0" expanded="true" />
-            <element signature="e#12708#12709#0" expanded="true" />
-            <element signature="e#12742#12743#0" expanded="true" />
-            <element signature="e#12775#12776#0" expanded="true" />
-            <element signature="method#testCheckHands#0;class#SimplePoker#0" expanded="false" />
-            <marker date="1430421350655" expanded="true" signature="17154:21840" placeholder="..." />
-            <marker date="1430421350655" expanded="false" signature="21775:21834" placeholder="{...}" />
-            <marker date="1430421350655" expanded="false" signature="21883:22303" placeholder="{...}" />
+            <element signature="docComment;method#SimplePoker#0;class#SimplePoker#0" expanded="false" />
+            <element signature="e#2733#2734#0" expanded="true" />
+            <element signature="e#2770#2771#0" expanded="true" />
+            <element signature="docComment;method#SimplePoker#1;class#SimplePoker#0" expanded="false" />
+            <element signature="e#2855#2856#0" expanded="true" />
+            <element signature="e#2892#2893#0" expanded="true" />
+            <element signature="docComment;method#showPayoutTable#0;class#SimplePoker#0" expanded="false" />
+            <element signature="docComment;method#checkHands#0;class#SimplePoker#0" expanded="false" />
+            <element signature="docComment;method#checkForRoyalFlush#0;class#SimplePoker#0" expanded="false" />
+            <element signature="e#12123#12124#0" expanded="true" />
+            <element signature="e#12191#12192#0" expanded="true" />
+            <element signature="e#12795#12796#0" expanded="true" />
+            <element signature="e#12826#12827#0" expanded="true" />
+            <element signature="e#12860#12861#0" expanded="true" />
+            <element signature="e#12893#12894#0" expanded="true" />
+            <marker date="1430424481216" expanded="true" signature="15244:16108" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -869,20 +905,22 @@
           <caret line="90" column="5" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2732#2733#0" expanded="true" />
-            <element signature="e#2769#2770#0" expanded="true" />
-            <element signature="e#2854#2855#0" expanded="true" />
-            <element signature="e#2891#2892#0" expanded="true" />
-            <element signature="e#12005#12006#0" expanded="true" />
-            <element signature="e#12073#12074#0" expanded="true" />
-            <element signature="e#12677#12678#0" expanded="true" />
-            <element signature="e#12708#12709#0" expanded="true" />
-            <element signature="e#12742#12743#0" expanded="true" />
-            <element signature="e#12775#12776#0" expanded="true" />
-            <element signature="method#testCheckHands#0;class#SimplePoker#0" expanded="false" />
-            <marker date="1430421350655" expanded="true" signature="17154:21840" placeholder="..." />
-            <marker date="1430421350655" expanded="false" signature="21775:21834" placeholder="{...}" />
-            <marker date="1430421350655" expanded="false" signature="21883:22303" placeholder="{...}" />
+            <element signature="docComment;method#SimplePoker#0;class#SimplePoker#0" expanded="false" />
+            <element signature="e#2733#2734#0" expanded="true" />
+            <element signature="e#2770#2771#0" expanded="true" />
+            <element signature="docComment;method#SimplePoker#1;class#SimplePoker#0" expanded="false" />
+            <element signature="e#2855#2856#0" expanded="true" />
+            <element signature="e#2892#2893#0" expanded="true" />
+            <element signature="docComment;method#showPayoutTable#0;class#SimplePoker#0" expanded="false" />
+            <element signature="docComment;method#checkHands#0;class#SimplePoker#0" expanded="false" />
+            <element signature="docComment;method#checkForRoyalFlush#0;class#SimplePoker#0" expanded="false" />
+            <element signature="e#12123#12124#0" expanded="true" />
+            <element signature="e#12191#12192#0" expanded="true" />
+            <element signature="e#12795#12796#0" expanded="true" />
+            <element signature="e#12826#12827#0" expanded="true" />
+            <element signature="e#12860#12861#0" expanded="true" />
+            <element signature="e#12893#12894#0" expanded="true" />
+            <marker date="1430424481216" expanded="true" signature="15244:16108" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -892,7 +930,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#5915#5921#0" expanded="true" />
+            <element signature="e#5779#5785#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -911,20 +949,22 @@
           <caret line="90" column="5" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2732#2733#0" expanded="true" />
-            <element signature="e#2769#2770#0" expanded="true" />
-            <element signature="e#2854#2855#0" expanded="true" />
-            <element signature="e#2891#2892#0" expanded="true" />
-            <element signature="e#12005#12006#0" expanded="true" />
-            <element signature="e#12073#12074#0" expanded="true" />
-            <element signature="e#12677#12678#0" expanded="true" />
-            <element signature="e#12708#12709#0" expanded="true" />
-            <element signature="e#12742#12743#0" expanded="true" />
-            <element signature="e#12775#12776#0" expanded="true" />
-            <element signature="method#testCheckHands#0;class#SimplePoker#0" expanded="false" />
-            <marker date="1430421350655" expanded="true" signature="17154:21840" placeholder="..." />
-            <marker date="1430421350655" expanded="false" signature="21775:21834" placeholder="{...}" />
-            <marker date="1430421350655" expanded="false" signature="21883:22303" placeholder="{...}" />
+            <element signature="docComment;method#SimplePoker#0;class#SimplePoker#0" expanded="false" />
+            <element signature="e#2733#2734#0" expanded="true" />
+            <element signature="e#2770#2771#0" expanded="true" />
+            <element signature="docComment;method#SimplePoker#1;class#SimplePoker#0" expanded="false" />
+            <element signature="e#2855#2856#0" expanded="true" />
+            <element signature="e#2892#2893#0" expanded="true" />
+            <element signature="docComment;method#showPayoutTable#0;class#SimplePoker#0" expanded="false" />
+            <element signature="docComment;method#checkHands#0;class#SimplePoker#0" expanded="false" />
+            <element signature="docComment;method#checkForRoyalFlush#0;class#SimplePoker#0" expanded="false" />
+            <element signature="e#12123#12124#0" expanded="true" />
+            <element signature="e#12191#12192#0" expanded="true" />
+            <element signature="e#12795#12796#0" expanded="true" />
+            <element signature="e#12826#12827#0" expanded="true" />
+            <element signature="e#12860#12861#0" expanded="true" />
+            <element signature="e#12893#12894#0" expanded="true" />
+            <marker date="1430424481216" expanded="true" signature="15244:16108" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -934,7 +974,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#5915#5921#0" expanded="true" />
+            <element signature="e#5779#5785#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -953,20 +993,22 @@
           <caret line="90" column="5" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2732#2733#0" expanded="true" />
-            <element signature="e#2769#2770#0" expanded="true" />
-            <element signature="e#2854#2855#0" expanded="true" />
-            <element signature="e#2891#2892#0" expanded="true" />
-            <element signature="e#12005#12006#0" expanded="true" />
-            <element signature="e#12073#12074#0" expanded="true" />
-            <element signature="e#12677#12678#0" expanded="true" />
-            <element signature="e#12708#12709#0" expanded="true" />
-            <element signature="e#12742#12743#0" expanded="true" />
-            <element signature="e#12775#12776#0" expanded="true" />
-            <element signature="method#testCheckHands#0;class#SimplePoker#0" expanded="false" />
-            <marker date="1430421350655" expanded="true" signature="17154:21840" placeholder="..." />
-            <marker date="1430421350655" expanded="false" signature="21775:21834" placeholder="{...}" />
-            <marker date="1430421350655" expanded="false" signature="21883:22303" placeholder="{...}" />
+            <element signature="docComment;method#SimplePoker#0;class#SimplePoker#0" expanded="false" />
+            <element signature="e#2733#2734#0" expanded="true" />
+            <element signature="e#2770#2771#0" expanded="true" />
+            <element signature="docComment;method#SimplePoker#1;class#SimplePoker#0" expanded="false" />
+            <element signature="e#2855#2856#0" expanded="true" />
+            <element signature="e#2892#2893#0" expanded="true" />
+            <element signature="docComment;method#showPayoutTable#0;class#SimplePoker#0" expanded="false" />
+            <element signature="docComment;method#checkHands#0;class#SimplePoker#0" expanded="false" />
+            <element signature="docComment;method#checkForRoyalFlush#0;class#SimplePoker#0" expanded="false" />
+            <element signature="e#12123#12124#0" expanded="true" />
+            <element signature="e#12191#12192#0" expanded="true" />
+            <element signature="e#12795#12796#0" expanded="true" />
+            <element signature="e#12826#12827#0" expanded="true" />
+            <element signature="e#12860#12861#0" expanded="true" />
+            <element signature="e#12893#12894#0" expanded="true" />
+            <marker date="1430424481216" expanded="true" signature="15244:16108" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -976,7 +1018,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#5915#5921#0" expanded="true" />
+            <element signature="e#5779#5785#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -995,20 +1037,22 @@
           <caret line="90" column="5" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2732#2733#0" expanded="true" />
-            <element signature="e#2769#2770#0" expanded="true" />
-            <element signature="e#2854#2855#0" expanded="true" />
-            <element signature="e#2891#2892#0" expanded="true" />
-            <element signature="e#12005#12006#0" expanded="true" />
-            <element signature="e#12073#12074#0" expanded="true" />
-            <element signature="e#12677#12678#0" expanded="true" />
-            <element signature="e#12708#12709#0" expanded="true" />
-            <element signature="e#12742#12743#0" expanded="true" />
-            <element signature="e#12775#12776#0" expanded="true" />
-            <element signature="method#testCheckHands#0;class#SimplePoker#0" expanded="false" />
-            <marker date="1430421350655" expanded="true" signature="17154:21840" placeholder="..." />
-            <marker date="1430421350655" expanded="false" signature="21775:21834" placeholder="{...}" />
-            <marker date="1430421350655" expanded="false" signature="21883:22303" placeholder="{...}" />
+            <element signature="docComment;method#SimplePoker#0;class#SimplePoker#0" expanded="false" />
+            <element signature="e#2733#2734#0" expanded="true" />
+            <element signature="e#2770#2771#0" expanded="true" />
+            <element signature="docComment;method#SimplePoker#1;class#SimplePoker#0" expanded="false" />
+            <element signature="e#2855#2856#0" expanded="true" />
+            <element signature="e#2892#2893#0" expanded="true" />
+            <element signature="docComment;method#showPayoutTable#0;class#SimplePoker#0" expanded="false" />
+            <element signature="docComment;method#checkHands#0;class#SimplePoker#0" expanded="false" />
+            <element signature="docComment;method#checkForRoyalFlush#0;class#SimplePoker#0" expanded="false" />
+            <element signature="e#12123#12124#0" expanded="true" />
+            <element signature="e#12191#12192#0" expanded="true" />
+            <element signature="e#12795#12796#0" expanded="true" />
+            <element signature="e#12826#12827#0" expanded="true" />
+            <element signature="e#12860#12861#0" expanded="true" />
+            <element signature="e#12893#12894#0" expanded="true" />
+            <marker date="1430424481216" expanded="true" signature="15244:16108" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1018,7 +1062,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#5915#5921#0" expanded="true" />
+            <element signature="e#5779#5785#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1037,20 +1081,22 @@
           <caret line="90" column="5" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2732#2733#0" expanded="true" />
-            <element signature="e#2769#2770#0" expanded="true" />
-            <element signature="e#2854#2855#0" expanded="true" />
-            <element signature="e#2891#2892#0" expanded="true" />
-            <element signature="e#12005#12006#0" expanded="true" />
-            <element signature="e#12073#12074#0" expanded="true" />
-            <element signature="e#12677#12678#0" expanded="true" />
-            <element signature="e#12708#12709#0" expanded="true" />
-            <element signature="e#12742#12743#0" expanded="true" />
-            <element signature="e#12775#12776#0" expanded="true" />
-            <element signature="method#testCheckHands#0;class#SimplePoker#0" expanded="false" />
-            <marker date="1430421350655" expanded="true" signature="17154:21840" placeholder="..." />
-            <marker date="1430421350655" expanded="false" signature="21775:21834" placeholder="{...}" />
-            <marker date="1430421350655" expanded="false" signature="21883:22303" placeholder="{...}" />
+            <element signature="docComment;method#SimplePoker#0;class#SimplePoker#0" expanded="false" />
+            <element signature="e#2733#2734#0" expanded="true" />
+            <element signature="e#2770#2771#0" expanded="true" />
+            <element signature="docComment;method#SimplePoker#1;class#SimplePoker#0" expanded="false" />
+            <element signature="e#2855#2856#0" expanded="true" />
+            <element signature="e#2892#2893#0" expanded="true" />
+            <element signature="docComment;method#showPayoutTable#0;class#SimplePoker#0" expanded="false" />
+            <element signature="docComment;method#checkHands#0;class#SimplePoker#0" expanded="false" />
+            <element signature="docComment;method#checkForRoyalFlush#0;class#SimplePoker#0" expanded="false" />
+            <element signature="e#12123#12124#0" expanded="true" />
+            <element signature="e#12191#12192#0" expanded="true" />
+            <element signature="e#12795#12796#0" expanded="true" />
+            <element signature="e#12826#12827#0" expanded="true" />
+            <element signature="e#12860#12861#0" expanded="true" />
+            <element signature="e#12893#12894#0" expanded="true" />
+            <marker date="1430424481216" expanded="true" signature="15244:16108" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1060,7 +1106,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#5915#5921#0" expanded="true" />
+            <element signature="e#5779#5785#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1079,20 +1125,22 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2732#2733#0" expanded="true" />
-            <element signature="e#2769#2770#0" expanded="true" />
-            <element signature="e#2854#2855#0" expanded="true" />
-            <element signature="e#2891#2892#0" expanded="true" />
-            <element signature="e#12005#12006#0" expanded="true" />
-            <element signature="e#12073#12074#0" expanded="true" />
-            <element signature="e#12677#12678#0" expanded="true" />
-            <element signature="e#12708#12709#0" expanded="true" />
-            <element signature="e#12742#12743#0" expanded="true" />
-            <element signature="e#12775#12776#0" expanded="true" />
-            <element signature="method#testCheckHands#0;class#SimplePoker#0" expanded="false" />
-            <marker date="1430421350655" expanded="true" signature="17154:21840" placeholder="..." />
-            <marker date="1430421350655" expanded="false" signature="21775:21834" placeholder="{...}" />
-            <marker date="1430421350655" expanded="false" signature="21883:22303" placeholder="{...}" />
+            <element signature="docComment;method#SimplePoker#0;class#SimplePoker#0" expanded="false" />
+            <element signature="e#2733#2734#0" expanded="true" />
+            <element signature="e#2770#2771#0" expanded="true" />
+            <element signature="docComment;method#SimplePoker#1;class#SimplePoker#0" expanded="false" />
+            <element signature="e#2855#2856#0" expanded="true" />
+            <element signature="e#2892#2893#0" expanded="true" />
+            <element signature="docComment;method#showPayoutTable#0;class#SimplePoker#0" expanded="false" />
+            <element signature="docComment;method#checkHands#0;class#SimplePoker#0" expanded="false" />
+            <element signature="docComment;method#checkForRoyalFlush#0;class#SimplePoker#0" expanded="false" />
+            <element signature="e#12123#12124#0" expanded="true" />
+            <element signature="e#12191#12192#0" expanded="true" />
+            <element signature="e#12795#12796#0" expanded="true" />
+            <element signature="e#12826#12827#0" expanded="true" />
+            <element signature="e#12860#12861#0" expanded="true" />
+            <element signature="e#12893#12894#0" expanded="true" />
+            <marker date="1430424481216" expanded="true" signature="15244:16108" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1102,7 +1150,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="178" column="17" selection-start-line="178" selection-start-column="17" selection-end-line="178" selection-end-column="17" />
           <folding>
-            <element signature="e#5915#5921#0" expanded="true" />
+            <element signature="e#5779#5785#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1121,20 +1169,22 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2732#2733#0" expanded="true" />
-            <element signature="e#2769#2770#0" expanded="true" />
-            <element signature="e#2854#2855#0" expanded="true" />
-            <element signature="e#2891#2892#0" expanded="true" />
-            <element signature="e#12005#12006#0" expanded="true" />
-            <element signature="e#12073#12074#0" expanded="true" />
-            <element signature="e#12677#12678#0" expanded="true" />
-            <element signature="e#12708#12709#0" expanded="true" />
-            <element signature="e#12742#12743#0" expanded="true" />
-            <element signature="e#12775#12776#0" expanded="true" />
-            <element signature="method#testCheckHands#0;class#SimplePoker#0" expanded="false" />
-            <marker date="1430421350655" expanded="true" signature="17154:21840" placeholder="..." />
-            <marker date="1430421350655" expanded="false" signature="21775:21834" placeholder="{...}" />
-            <marker date="1430421350655" expanded="false" signature="21883:22303" placeholder="{...}" />
+            <element signature="docComment;method#SimplePoker#0;class#SimplePoker#0" expanded="false" />
+            <element signature="e#2733#2734#0" expanded="true" />
+            <element signature="e#2770#2771#0" expanded="true" />
+            <element signature="docComment;method#SimplePoker#1;class#SimplePoker#0" expanded="false" />
+            <element signature="e#2855#2856#0" expanded="true" />
+            <element signature="e#2892#2893#0" expanded="true" />
+            <element signature="docComment;method#showPayoutTable#0;class#SimplePoker#0" expanded="false" />
+            <element signature="docComment;method#checkHands#0;class#SimplePoker#0" expanded="false" />
+            <element signature="docComment;method#checkForRoyalFlush#0;class#SimplePoker#0" expanded="false" />
+            <element signature="e#12123#12124#0" expanded="true" />
+            <element signature="e#12191#12192#0" expanded="true" />
+            <element signature="e#12795#12796#0" expanded="true" />
+            <element signature="e#12826#12827#0" expanded="true" />
+            <element signature="e#12860#12861#0" expanded="true" />
+            <element signature="e#12893#12894#0" expanded="true" />
+            <marker date="1430424481216" expanded="true" signature="15244:16108" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1144,7 +1194,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="178" column="17" selection-start-line="178" selection-start-column="17" selection-end-line="178" selection-end-column="17" />
           <folding>
-            <element signature="e#5915#5921#0" expanded="true" />
+            <element signature="e#5779#5785#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1163,20 +1213,22 @@
           <caret line="62" column="34" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2732#2733#0" expanded="true" />
-            <element signature="e#2769#2770#0" expanded="true" />
-            <element signature="e#2854#2855#0" expanded="true" />
-            <element signature="e#2891#2892#0" expanded="true" />
-            <element signature="e#12005#12006#0" expanded="true" />
-            <element signature="e#12073#12074#0" expanded="true" />
-            <element signature="e#12677#12678#0" expanded="true" />
-            <element signature="e#12708#12709#0" expanded="true" />
-            <element signature="e#12742#12743#0" expanded="true" />
-            <element signature="e#12775#12776#0" expanded="true" />
-            <element signature="method#testCheckHands#0;class#SimplePoker#0" expanded="false" />
-            <marker date="1430421350655" expanded="true" signature="17154:21840" placeholder="..." />
-            <marker date="1430421350655" expanded="false" signature="21775:21834" placeholder="{...}" />
-            <marker date="1430421350655" expanded="false" signature="21883:22303" placeholder="{...}" />
+            <element signature="docComment;method#SimplePoker#0;class#SimplePoker#0" expanded="false" />
+            <element signature="e#2733#2734#0" expanded="true" />
+            <element signature="e#2770#2771#0" expanded="true" />
+            <element signature="docComment;method#SimplePoker#1;class#SimplePoker#0" expanded="false" />
+            <element signature="e#2855#2856#0" expanded="true" />
+            <element signature="e#2892#2893#0" expanded="true" />
+            <element signature="docComment;method#showPayoutTable#0;class#SimplePoker#0" expanded="false" />
+            <element signature="docComment;method#checkHands#0;class#SimplePoker#0" expanded="false" />
+            <element signature="docComment;method#checkForRoyalFlush#0;class#SimplePoker#0" expanded="false" />
+            <element signature="e#12123#12124#0" expanded="true" />
+            <element signature="e#12191#12192#0" expanded="true" />
+            <element signature="e#12795#12796#0" expanded="true" />
+            <element signature="e#12826#12827#0" expanded="true" />
+            <element signature="e#12860#12861#0" expanded="true" />
+            <element signature="e#12893#12894#0" expanded="true" />
+            <marker date="1430424481216" expanded="true" signature="15244:16108" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1186,7 +1238,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#5915#5921#0" expanded="true" />
+            <element signature="e#5779#5785#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1205,20 +1257,22 @@
           <caret line="62" column="34" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2732#2733#0" expanded="true" />
-            <element signature="e#2769#2770#0" expanded="true" />
-            <element signature="e#2854#2855#0" expanded="true" />
-            <element signature="e#2891#2892#0" expanded="true" />
-            <element signature="e#12005#12006#0" expanded="true" />
-            <element signature="e#12073#12074#0" expanded="true" />
-            <element signature="e#12677#12678#0" expanded="true" />
-            <element signature="e#12708#12709#0" expanded="true" />
-            <element signature="e#12742#12743#0" expanded="true" />
-            <element signature="e#12775#12776#0" expanded="true" />
-            <element signature="method#testCheckHands#0;class#SimplePoker#0" expanded="false" />
-            <marker date="1430421350655" expanded="true" signature="17154:21840" placeholder="..." />
-            <marker date="1430421350655" expanded="false" signature="21775:21834" placeholder="{...}" />
-            <marker date="1430421350655" expanded="false" signature="21883:22303" placeholder="{...}" />
+            <element signature="docComment;method#SimplePoker#0;class#SimplePoker#0" expanded="false" />
+            <element signature="e#2733#2734#0" expanded="true" />
+            <element signature="e#2770#2771#0" expanded="true" />
+            <element signature="docComment;method#SimplePoker#1;class#SimplePoker#0" expanded="false" />
+            <element signature="e#2855#2856#0" expanded="true" />
+            <element signature="e#2892#2893#0" expanded="true" />
+            <element signature="docComment;method#showPayoutTable#0;class#SimplePoker#0" expanded="false" />
+            <element signature="docComment;method#checkHands#0;class#SimplePoker#0" expanded="false" />
+            <element signature="docComment;method#checkForRoyalFlush#0;class#SimplePoker#0" expanded="false" />
+            <element signature="e#12123#12124#0" expanded="true" />
+            <element signature="e#12191#12192#0" expanded="true" />
+            <element signature="e#12795#12796#0" expanded="true" />
+            <element signature="e#12826#12827#0" expanded="true" />
+            <element signature="e#12860#12861#0" expanded="true" />
+            <element signature="e#12893#12894#0" expanded="true" />
+            <marker date="1430424481216" expanded="true" signature="15244:16108" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1228,7 +1282,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#5915#5921#0" expanded="true" />
+            <element signature="e#5779#5785#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1271,36 +1325,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/Proj5/PJ5/SimplePoker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32692307">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#17470#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/PJ5/PlayingCard.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding>
-            <element signature="e#5915#5921#0" expanded="true" />
+            <element signature="e#5779#5785#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PJ5/SimplePoker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7818182">
-          <caret line="543" column="34" selection-start-line="543" selection-start-column="34" selection-end-line="543" selection-end-column="34" />
+        <state vertical-scroll-proportion="6.04">
+          <caret line="544" column="0" selection-start-line="544" selection-start-column="0" selection-end-line="544" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2732#2733#0" expanded="true" />
-            <element signature="e#2769#2770#0" expanded="true" />
-            <element signature="e#2854#2855#0" expanded="true" />
-            <element signature="e#2891#2892#0" expanded="true" />
-            <element signature="e#12005#12006#0" expanded="true" />
-            <element signature="e#12073#12074#0" expanded="true" />
-            <element signature="e#12677#12678#0" expanded="true" />
-            <element signature="e#12708#12709#0" expanded="true" />
-            <element signature="e#12742#12743#0" expanded="true" />
-            <element signature="e#12775#12776#0" expanded="true" />
-            <element signature="method#testCheckHands#0;class#SimplePoker#0" expanded="false" />
-            <marker date="1430421350655" expanded="true" signature="17154:21840" placeholder="..." />
-            <marker date="1430421350655" expanded="false" signature="21775:21834" placeholder="{...}" />
-            <marker date="1430421350655" expanded="false" signature="21883:22303" placeholder="{...}" />
+            <element signature="docComment;method#SimplePoker#0;class#SimplePoker#0" expanded="false" />
+            <element signature="e#2733#2734#0" expanded="true" />
+            <element signature="e#2770#2771#0" expanded="true" />
+            <element signature="docComment;method#SimplePoker#1;class#SimplePoker#0" expanded="false" />
+            <element signature="e#2855#2856#0" expanded="true" />
+            <element signature="e#2892#2893#0" expanded="true" />
+            <element signature="docComment;method#showPayoutTable#0;class#SimplePoker#0" expanded="false" />
+            <element signature="docComment;method#checkHands#0;class#SimplePoker#0" expanded="false" />
+            <element signature="docComment;method#checkForRoyalFlush#0;class#SimplePoker#0" expanded="false" />
+            <element signature="e#12123#12124#0" expanded="true" />
+            <element signature="e#12191#12192#0" expanded="true" />
+            <element signature="e#12795#12796#0" expanded="true" />
+            <element signature="e#12826#12827#0" expanded="true" />
+            <element signature="e#12860#12861#0" expanded="true" />
+            <element signature="e#12893#12894#0" expanded="true" />
+            <marker date="1430424481216" expanded="true" signature="15244:16108" placeholder="..." />
           </folding>
         </state>
       </provider>

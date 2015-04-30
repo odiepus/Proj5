@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0644c9aa-521e-416f-afc4-988c570e13b7" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Proj5/PJ5/SimplePoker$cardComparator.class" afterPath="$PROJECT_DIR$/out/production/Proj5/PJ5/SimplePoker$cardComparator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Proj5/PJ5/SimplePoker.class" afterPath="$PROJECT_DIR$/out/production/Proj5/PJ5/SimplePoker.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PJ5/SimplePoker.java" afterPath="$PROJECT_DIR$/src/PJ5/SimplePoker.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -28,17 +30,9 @@
       <file leaf-file-name="SimplePoker.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/PJ5/SimplePoker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.66718996">
-              <caret line="484" column="0" selection-start-line="484" selection-start-column="0" selection-end-line="484" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.41287285">
+              <caret line="478" column="35" selection-start-line="478" selection-start-column="35" selection-end-line="478" selection-end-column="35" />
               <folding>
-                <element signature="e#2685#2686#0" expanded="true" />
-                <element signature="e#2722#2723#0" expanded="true" />
-                <element signature="e#2807#2808#0" expanded="true" />
-                <element signature="e#2844#2845#0" expanded="true" />
-                <element signature="e#10187#10188#0" expanded="true" />
-                <element signature="e#10251#10252#0" expanded="true" />
-                <element signature="e#10476#10477#0" expanded="true" />
-                <element signature="e#10509#10510#0" expanded="true" />
                 <element signature="method#testCheckHands#0;class#SimplePoker#0" expanded="false" />
               </folding>
             </state>
@@ -49,7 +43,7 @@
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_25/src.zip!/java/util/Scanner.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="1370" column="0" selection-start-line="1370" selection-start-column="0" selection-end-line="1370" selection-end-column="0" />
+              <caret line="1539" column="0" selection-start-line="1539" selection-start-column="0" selection-end-line="1539" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -60,7 +54,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
-              <folding />
+              <folding>
+                <element signature="n#!!doc" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -130,6 +126,9 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -204,9 +203,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -513,12 +509,18 @@
       <option name="project" value="LOCAL" />
       <updated>1430345224196</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Working on play() got the draw part done but i cant get the loop to work.">
+      <created>1430351884477</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1430351884477</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -528,7 +530,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34158415" sideWeight="0.45309168" order="2" side_tool="true" content_ui="tabs" x="678" y="331" width="850" height="514" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34158415" sideWeight="0.4552239" order="2" side_tool="true" content_ui="tabs" x="678" y="331" width="850" height="514" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871288" sideWeight="0.49520257" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15991472" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -536,7 +538,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34158415" sideWeight="0.5469083" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34158415" sideWeight="0.54477614" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -566,7 +568,8 @@
     <MESSAGE value="Got royalflush working. need to figure out how to only output royalflush and not flush." />
     <MESSAGE value="got checkforakind and checkforpairs working. working on only outputting what the hand is. e.g. royal flush is a royal flush and flush. i only want royal flush to print. also, kindCounter is holding an int thus it is not being reset when one of the other methods use it. it pops as two pairs for the set flush test code." />
     <MESSAGE value="FIxed the last problems with multiple win types printing to screen at same time. Ready to work on play()." />
-    <option name="LAST_COMMIT_MESSAGE" value="FIxed the last problems with multiple win types printing to screen at same time. Ready to work on play()." />
+    <MESSAGE value="Working on play() got the draw part done but i cant get the loop to work." />
+    <option name="LAST_COMMIT_MESSAGE" value="Working on play() got the draw part done but i cant get the loop to work." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -576,18 +579,6 @@
           <line>62</line>
           <properties />
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/PJ5/SimplePoker.java</url>
-          <line>401</line>
-          <properties />
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/PJ5/SimplePoker.java</url>
-          <line>385</line>
-          <properties />
-          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -606,11 +597,51 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/PJ5/SimplePoker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#testCheckHands#0;class#SimplePoker#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_25/src.zip!/java/util/Scanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1370" column="0" selection-start-line="1370" selection-start-column="0" selection-end-line="1370" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestPlaySimplePoker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PJ5/PlayingCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding>
+            <element signature="e#5915#5921#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/TestPlaySimplePoker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -619,14 +650,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="197" column="6" selection-start-line="197" selection-start-column="6" selection-end-line="197" selection-end-column="6" />
           <folding>
-            <element signature="e#2685#2686#0" expanded="true" />
-            <element signature="e#2722#2723#0" expanded="true" />
-            <element signature="e#2807#2808#0" expanded="true" />
-            <element signature="e#2844#2845#0" expanded="true" />
-            <element signature="e#10187#10188#0" expanded="true" />
-            <element signature="e#10251#10252#0" expanded="true" />
-            <element signature="e#10476#10477#0" expanded="true" />
-            <element signature="e#10509#10510#0" expanded="true" />
             <element signature="method#testCheckHands#0;class#SimplePoker#0" expanded="false" />
           </folding>
         </state>
@@ -646,7 +669,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -655,14 +680,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="197" column="6" selection-start-line="197" selection-start-column="6" selection-end-line="197" selection-end-column="6" />
           <folding>
-            <element signature="e#2685#2686#0" expanded="true" />
-            <element signature="e#2722#2723#0" expanded="true" />
-            <element signature="e#2807#2808#0" expanded="true" />
-            <element signature="e#2844#2845#0" expanded="true" />
-            <element signature="e#10187#10188#0" expanded="true" />
-            <element signature="e#10251#10252#0" expanded="true" />
-            <element signature="e#10476#10477#0" expanded="true" />
-            <element signature="e#10509#10510#0" expanded="true" />
             <element signature="method#testCheckHands#0;class#SimplePoker#0" expanded="false" />
           </folding>
         </state>
@@ -682,7 +699,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -701,14 +720,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="177" column="6" selection-start-line="177" selection-start-column="4" selection-end-line="180" selection-end-column="29" />
           <folding>
-            <element signature="e#2685#2686#0" expanded="true" />
-            <element signature="e#2722#2723#0" expanded="true" />
-            <element signature="e#2807#2808#0" expanded="true" />
-            <element signature="e#2844#2845#0" expanded="true" />
-            <element signature="e#10187#10188#0" expanded="true" />
-            <element signature="e#10251#10252#0" expanded="true" />
-            <element signature="e#10476#10477#0" expanded="true" />
-            <element signature="e#10509#10510#0" expanded="true" />
             <element signature="method#testCheckHands#0;class#SimplePoker#0" expanded="false" />
           </folding>
         </state>
@@ -718,7 +729,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -737,14 +750,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#2685#2686#0" expanded="true" />
-            <element signature="e#2722#2723#0" expanded="true" />
-            <element signature="e#2807#2808#0" expanded="true" />
-            <element signature="e#2844#2845#0" expanded="true" />
-            <element signature="e#10187#10188#0" expanded="true" />
-            <element signature="e#10251#10252#0" expanded="true" />
-            <element signature="e#10476#10477#0" expanded="true" />
-            <element signature="e#10509#10510#0" expanded="true" />
             <element signature="method#testCheckHands#0;class#SimplePoker#0" expanded="false" />
           </folding>
         </state>
@@ -754,7 +759,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -763,14 +770,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="90" column="5" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
           <folding>
-            <element signature="e#2685#2686#0" expanded="true" />
-            <element signature="e#2722#2723#0" expanded="true" />
-            <element signature="e#2807#2808#0" expanded="true" />
-            <element signature="e#2844#2845#0" expanded="true" />
-            <element signature="e#10187#10188#0" expanded="true" />
-            <element signature="e#10251#10252#0" expanded="true" />
-            <element signature="e#10476#10477#0" expanded="true" />
-            <element signature="e#10509#10510#0" expanded="true" />
             <element signature="method#testCheckHands#0;class#SimplePoker#0" expanded="false" />
           </folding>
         </state>
@@ -790,7 +789,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -799,14 +800,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="90" column="5" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
           <folding>
-            <element signature="e#2685#2686#0" expanded="true" />
-            <element signature="e#2722#2723#0" expanded="true" />
-            <element signature="e#2807#2808#0" expanded="true" />
-            <element signature="e#2844#2845#0" expanded="true" />
-            <element signature="e#10187#10188#0" expanded="true" />
-            <element signature="e#10251#10252#0" expanded="true" />
-            <element signature="e#10476#10477#0" expanded="true" />
-            <element signature="e#10509#10510#0" expanded="true" />
             <element signature="method#testCheckHands#0;class#SimplePoker#0" expanded="false" />
           </folding>
         </state>
@@ -826,7 +819,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -835,14 +830,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="90" column="5" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
           <folding>
-            <element signature="e#2685#2686#0" expanded="true" />
-            <element signature="e#2722#2723#0" expanded="true" />
-            <element signature="e#2807#2808#0" expanded="true" />
-            <element signature="e#2844#2845#0" expanded="true" />
-            <element signature="e#10187#10188#0" expanded="true" />
-            <element signature="e#10251#10252#0" expanded="true" />
-            <element signature="e#10476#10477#0" expanded="true" />
-            <element signature="e#10509#10510#0" expanded="true" />
             <element signature="method#testCheckHands#0;class#SimplePoker#0" expanded="false" />
           </folding>
         </state>
@@ -862,7 +849,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -871,14 +860,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="90" column="5" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
           <folding>
-            <element signature="e#2685#2686#0" expanded="true" />
-            <element signature="e#2722#2723#0" expanded="true" />
-            <element signature="e#2807#2808#0" expanded="true" />
-            <element signature="e#2844#2845#0" expanded="true" />
-            <element signature="e#10187#10188#0" expanded="true" />
-            <element signature="e#10251#10252#0" expanded="true" />
-            <element signature="e#10476#10477#0" expanded="true" />
-            <element signature="e#10509#10510#0" expanded="true" />
             <element signature="method#testCheckHands#0;class#SimplePoker#0" expanded="false" />
           </folding>
         </state>
@@ -898,7 +879,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -907,14 +890,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="90" column="5" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
           <folding>
-            <element signature="e#2685#2686#0" expanded="true" />
-            <element signature="e#2722#2723#0" expanded="true" />
-            <element signature="e#2807#2808#0" expanded="true" />
-            <element signature="e#2844#2845#0" expanded="true" />
-            <element signature="e#10187#10188#0" expanded="true" />
-            <element signature="e#10251#10252#0" expanded="true" />
-            <element signature="e#10476#10477#0" expanded="true" />
-            <element signature="e#10509#10510#0" expanded="true" />
             <element signature="method#testCheckHands#0;class#SimplePoker#0" expanded="false" />
           </folding>
         </state>
@@ -934,7 +909,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -943,14 +920,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#2685#2686#0" expanded="true" />
-            <element signature="e#2722#2723#0" expanded="true" />
-            <element signature="e#2807#2808#0" expanded="true" />
-            <element signature="e#2844#2845#0" expanded="true" />
-            <element signature="e#10187#10188#0" expanded="true" />
-            <element signature="e#10251#10252#0" expanded="true" />
-            <element signature="e#10476#10477#0" expanded="true" />
-            <element signature="e#10509#10510#0" expanded="true" />
             <element signature="method#testCheckHands#0;class#SimplePoker#0" expanded="false" />
           </folding>
         </state>
@@ -970,7 +939,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -979,14 +950,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#2685#2686#0" expanded="true" />
-            <element signature="e#2722#2723#0" expanded="true" />
-            <element signature="e#2807#2808#0" expanded="true" />
-            <element signature="e#2844#2845#0" expanded="true" />
-            <element signature="e#10187#10188#0" expanded="true" />
-            <element signature="e#10251#10252#0" expanded="true" />
-            <element signature="e#10476#10477#0" expanded="true" />
-            <element signature="e#10509#10510#0" expanded="true" />
             <element signature="method#testCheckHands#0;class#SimplePoker#0" expanded="false" />
           </folding>
         </state>
@@ -1006,7 +969,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1015,14 +980,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="62" column="34" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="34" />
           <folding>
-            <element signature="e#2685#2686#0" expanded="true" />
-            <element signature="e#2722#2723#0" expanded="true" />
-            <element signature="e#2807#2808#0" expanded="true" />
-            <element signature="e#2844#2845#0" expanded="true" />
-            <element signature="e#10187#10188#0" expanded="true" />
-            <element signature="e#10251#10252#0" expanded="true" />
-            <element signature="e#10476#10477#0" expanded="true" />
-            <element signature="e#10509#10510#0" expanded="true" />
             <element signature="method#testCheckHands#0;class#SimplePoker#0" expanded="false" />
           </folding>
         </state>
@@ -1042,7 +999,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1051,14 +1010,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="62" column="34" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="34" />
           <folding>
-            <element signature="e#2685#2686#0" expanded="true" />
-            <element signature="e#2722#2723#0" expanded="true" />
-            <element signature="e#2807#2808#0" expanded="true" />
-            <element signature="e#2844#2845#0" expanded="true" />
-            <element signature="e#10187#10188#0" expanded="true" />
-            <element signature="e#10251#10252#0" expanded="true" />
-            <element signature="e#10476#10477#0" expanded="true" />
-            <element signature="e#10509#10510#0" expanded="true" />
             <element signature="method#testCheckHands#0;class#SimplePoker#0" expanded="false" />
           </folding>
         </state>
@@ -1093,7 +1044,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1101,7 +1054,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33281004">
           <caret line="149" column="8" selection-start-line="149" selection-start-column="8" selection-end-line="149" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1118,24 +1070,16 @@
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_25/src.zip!/java/util/Scanner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="1370" column="0" selection-start-line="1370" selection-start-column="0" selection-end-line="1370" selection-end-column="0" />
+          <caret line="1539" column="0" selection-start-line="1539" selection-start-column="0" selection-end-line="1539" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PJ5/SimplePoker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.66718996">
-          <caret line="484" column="0" selection-start-line="484" selection-start-column="0" selection-end-line="484" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.41287285">
+          <caret line="478" column="35" selection-start-line="478" selection-start-column="35" selection-end-line="478" selection-end-column="35" />
           <folding>
-            <element signature="e#2685#2686#0" expanded="true" />
-            <element signature="e#2722#2723#0" expanded="true" />
-            <element signature="e#2807#2808#0" expanded="true" />
-            <element signature="e#2844#2845#0" expanded="true" />
-            <element signature="e#10187#10188#0" expanded="true" />
-            <element signature="e#10251#10252#0" expanded="true" />
-            <element signature="e#10476#10477#0" expanded="true" />
-            <element signature="e#10509#10510#0" expanded="true" />
             <element signature="method#testCheckHands#0;class#SimplePoker#0" expanded="false" />
           </folding>
         </state>

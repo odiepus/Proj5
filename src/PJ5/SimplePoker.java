@@ -392,7 +392,7 @@ public class SimplePoker {
         for (int i = 0; i < size; i++) {
             positionsToHold[i] = Integer.parseInt((String) strgToken.nextElement());
         }
-        in.close();
+
 
         removeAndReplace(positionsToHold);
         showHand();
@@ -418,19 +418,15 @@ public class SimplePoker {
     }
 
     private boolean wouldYouLikeToPlayAGame(){
-        System.out.println("One more game (y or n)?");
+        System.out.println("Play again? (y / n) ");
         Scanner inn = new Scanner(System.in);
         String input;
-        input = inn.next();
+        input = inn.nextLine();
 
-        if (input == "y"){
-
+        if (input == "y") {
             return true;
         }
-        else{
-
-            return false;
-        }
+        return false;
     }
 
 
@@ -469,23 +465,31 @@ public class SimplePoker {
          */
 
         // implement this method!
-        boolean play;
+
         showPayoutTable();
 
         SimplePoker startGame = new SimplePoker();
-        do {
+        while (true){
             startGame.showBalance();
             startGame.getBet();
             startGame.shuffleDeck();
             startGame.dealDeck();
             startGame.showHand();
             startGame.whatCardsToKeep();
-            play = wouldYouLikeToPlayAGame();
-        }while (play);
+            startGame.checkHands();
 
 
 
 
+
+            System.out.println("Play again? (y / n) ");
+            Scanner in = new Scanner(System.in);
+            String input = in.nextLine();
+            if (input.charAt(0) == 'n'){
+                System.out.println("Goodbye!");
+                break;
+            }
+        }
     }
 
 

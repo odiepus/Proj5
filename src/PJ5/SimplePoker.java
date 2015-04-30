@@ -225,9 +225,9 @@ public class SimplePoker {
         }
         if (cardBottom == currentHand.get(index).getRank()){
             kindCounter +=1;
-            return  findJohnStamosTop(index - 1);
+            return  findJohnStamosBottom(index - 1);
         }else if (cardBottom != currentHand.get(index).getRank()){
-            return  findJohnStamosTop(index - 1);
+            return  findJohnStamosBottom(index - 1);
         }
         return index;
     }
@@ -341,8 +341,9 @@ public class SimplePoker {
         bet = in.nextInt();
     }
 
-    private void verifyBet(){
-
+    private boolean verifyBet(){
+        if (bet > balance){return false;}
+        else {return true;}
     }
 
     private void shuffleDeck() {
@@ -417,20 +418,6 @@ public class SimplePoker {
         }
     }
 
-    private boolean wouldYouLikeToPlayAGame(){
-        System.out.println("Play again? (y / n) ");
-        Scanner inn = new Scanner(System.in);
-        String input;
-        input = inn.nextLine();
-
-        if (input == "y") {
-            return true;
-        }
-        return false;
-    }
-
-
-
     public void play()
     {
         /** The main algorithm for single player poker game
@@ -472,23 +459,28 @@ public class SimplePoker {
         while (true){
             startGame.showBalance();
             startGame.getBet();
-            startGame.shuffleDeck();
-            startGame.dealDeck();
-            startGame.showHand();
-            startGame.whatCardsToKeep();
-            startGame.checkHands();
+            if (startGame.verifyBet()) {
 
+                startGame.shuffleDeck();
+                startGame.dealDeck();
+                startGame.showHand();
+                startGame.whatCardsToKeep();
+                startGame.checkHands();
 
-
-
-
-            System.out.println("Play again? (y / n) ");
-            Scanner in = new Scanner(System.in);
-            String input = in.nextLine();
-            if (input.charAt(0) == 'n'){
-                System.out.println("Goodbye!");
-                break;
+                System.out.println("Play again? (y / n) ");
+                Scanner in = new Scanner(System.in);
+                String input = in.nextLine();
+                if (input.charAt(0) == 'n'){
+                    System.out.println("Goodbye!");
+                    break;
+                }
             }
+            else {
+                System.out.println("Please enter a bet of $" + balance + " or below.");
+            }
+
+
+
         }
     }
 
@@ -541,8 +533,8 @@ public class SimplePoker {
             // set Four of a Kind
             System.out.println("Set 4 o' kind");
             currentHand.clear();
-            currentHand.add(new Card(8,3));
-            currentHand.add(new Card(8,0));
+            currentHand.add(new Card(8, 3));
+            currentHand.add(new Card(8, 0));
             currentHand.add(new Card(12,3));
             currentHand.add(new Card(8, 1));
             currentHand.add(new Card(8, 2));
@@ -616,11 +608,29 @@ public class SimplePoker {
         }
     }
 
+    public void testAHand(){
+        try {
+            currentHand = new ArrayList<Card>();
+            currentHand.clear();
+            currentHand.add(new Card(8, 3));
+            currentHand.add(new Card(12, 0));
+            currentHand.add(new Card(12, 3));
+            currentHand.add(new Card(12, 1));
+            currentHand.add(new Card(8, 2));
+            checkHands();
+            System.out.println("-----------------------------------\n");
+        }
+        catch (Exception e)
+        {
+            System.out.println(e.getMessage());
+        }
+    }
+
     /* Quick testCheckHands() */
     public static void main(String args[])
     {
         SimplePoker mypokergame = new SimplePoker();
-
+       //mypokergame.testAHand();
         mypokergame.play();
 
     }

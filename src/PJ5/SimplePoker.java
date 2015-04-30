@@ -336,14 +336,11 @@ public class SimplePoker {
         else if (cardB != cardA){
             return findPairs(index - 1);
         }
-        else{
-            return index;
-        }
+        return index;
     }
 
     private int findRoyalPair(int index){
         int cardA = 0, cardB = 0;
-        int suitA = 0, suitB = -1;
 
         if (index != 0) {
             cardA = currentHand.get(index - 1).getRank();
@@ -360,9 +357,7 @@ public class SimplePoker {
         else if (cardB != cardA){
             return findRoyalPair(index - 1);
         }
-        else{
-            return index;
-        }
+        return index;
     }
     /*&*&*&*&*&*&*&*&*&*&*&START -- PAIRS &**&*&*&*&*&*&*&*&*&*&*/
 
